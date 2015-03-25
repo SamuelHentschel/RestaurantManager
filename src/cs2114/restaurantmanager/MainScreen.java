@@ -1,8 +1,9 @@
 package cs2114.restaurantmanager;
 
+
 import sofia.graphics.Color;
 import android.graphics.RectF;
-import sofia.app.ShapeScreen;
+import sofia.app.Screen;
 import android.widget.*;
 
 // -------------------------------------------------------------------------
@@ -14,12 +15,18 @@ import android.widget.*;
  *  @version 2015.03.20
  */
 public class MainScreen
-    extends ShapeScreen
+    extends Screen
 {
 
     public void initialize()
     {
 
+    }
+
+    public void serversTableClicked()
+    {
+        presentScreen(TableScreen.class);
+        finish();
     }
 
 }

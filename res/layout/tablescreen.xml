@@ -9,11 +9,11 @@
     tools:context="cs2114.restaurantmanager.MainScreen" >
 
     <Button
-        android:id="@+id/serversTable"
+        android:id="@+id/backToMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Server&apos;s" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Menu" />
 
 </RelativeLayout>
