@@ -1,21 +1,25 @@
 package cs2114.restaurantmanager;
 
-import sofia.app.Screen;
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import sofia.graphics.Color;
+import android.graphics.RectF;
+import sofia.app.ShapeScreen;
+import android.widget.*;
 
+// -------------------------------------------------------------------------
 /**
- *  Write a one-sentence summary of your class here.
- *  Follow it with additional details about its purpose, what abstraction
- *  it represents, and how to use it.
+ *  Screen Class for Android application
+ *  which initiate all shapes and GUI of the application
  *
- *  @author Sam
- *  @version Mar 22, 2015
+ *  @author LegitMe
+ *  @version 2015.03.20
  */
 public class MainScreen
-    extends Screen
+    extends ShapeScreen
 {
+
+    public void initialize()
+    {
+
+    }
 
 }
