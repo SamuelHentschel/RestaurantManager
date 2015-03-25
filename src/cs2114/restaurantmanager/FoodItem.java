@@ -11,15 +11,15 @@ class FoodItem
 {
     //Fields
     /**
-     * A field to hold the name of the food item.
+     * A field to hold the name of the FoodItem.
      */
     protected String name;
     /**
-     * A field to hold the ingredients in the food item.
+     * A field to hold the ingredients in the FoodItem.
      */
     protected String ingredients;
     /**
-     * A field to hold the cost of the food item.
+     * A field to hold the cost of the FoodItem.
      */
     protected double cost;
     private String note;
@@ -30,7 +30,7 @@ class FoodItem
 
     //Constructors
     /**
-     * Creates a new FoodItem and initializes the fields.
+     * Creates a new FoodItem and initializes every field to an empty value.
      */
     public FoodItem()
     {
@@ -46,7 +46,7 @@ class FoodItem
 
     //Methods
     /**
-     * Gets the name of the food item.
+     * Gets the name of the FoodItem.
      *
      * @return      Returns the name of the food item.
      */
@@ -56,7 +56,7 @@ class FoodItem
     }
 
     /**
-     * Gets the ingredients of the food item.
+     * Gets the ingredients of the FoodItem.
      *
      * @return      Returns the ingredients in the food item.
      */
@@ -66,7 +66,7 @@ class FoodItem
     }
 
     /**
-     * Gets the cost of the food item.
+     * Gets the cost of the FoodItem.
      *
      * @return      Returns the cost of the food item.
      */
@@ -76,7 +76,7 @@ class FoodItem
     }
 
     /**
-     * Gets the notes on the preparation of the food item.
+     * Gets the notes on the preparation of the FoodItem.
      *
      * @return      Returns the note on the food preparation.
      */
@@ -96,9 +96,9 @@ class FoodItem
     }
 
     /**
-     * Gets the time the food item was ordered.
+     * Gets the time the FoodItem was ordered.
      *
-     * @return      Returns the time the food item was ordered.
+     * @return      Returns the time the FoodItem was ordered.
      */
     public long getTimeOrdered()
     {

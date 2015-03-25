@@ -56,7 +56,7 @@ class Bill
     }
 
     /**
-     * Gets all the orders that are being put on this Vill.
+     * Gets all the orders that are being put on this Bill.
      *
      * @return      Returns the array holding all the orders on this Bill.
      */
