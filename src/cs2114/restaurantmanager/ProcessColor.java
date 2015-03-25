@@ -11,6 +11,7 @@ import sofia.graphics.Color;
  */
 class ProcessColor
 {
+    //Fields
     /**
      * A field that relates a clear table to the color white.
      */
