@@ -5,6 +5,7 @@ import sofia.graphics.Color;
 import android.graphics.RectF;
 import sofia.app.Screen;
 import android.widget.*;
+import sofia.app.ScreenLayout;
 
 // -------------------------------------------------------------------------
 /**
