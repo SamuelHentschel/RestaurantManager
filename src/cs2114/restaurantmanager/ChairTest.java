@@ -39,16 +39,14 @@ public class ChairTest
     /**
      * Tests the behavior of the getOrders() method.
      */
-    public void testGetOrders()
+    public void testGetAndSetOrders()
     {
-        assertEquals(0, chair.getOrders().size());
-        chair.getOrders().add(item1);
-        assertEquals(1, chair.getOrders().size());
-        assertEquals("item1",
-            chair.getOrders().get(chair.getOrders().size() - 1).getName());
-        chair.getOrders().add(item2);
-        assertEquals(2, chair.getOrders().size());
-        assertEquals("item2",
-            chair.getOrders().get(chair.getOrders().size() - 1).getName());
+        assertEquals(0, chair.getSize());
+        chair.add(item1);
+        assertEquals(1, chair.getSize());
+        assertEquals("item1", chair.getOrders()[chair.getSize() - 1].name);
+        chair.add(item2);
+        assertEquals(2, chair.getSize());
+        assertEquals("item2", chair.getOrders()[chair.getSize() - 1].name);
     }
 }
