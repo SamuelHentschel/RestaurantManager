@@ -1,19 +1,20 @@
 package cs2114.restaurantmanager;
 /**
- *  Creates a Coca Cola object
+ *  Iced tea class that contains the menu item's
+ *  specifications.
  *
  *  @author Calogero
  *  @version Mar 26, 2015
  */
-public class CocaCola extends FoodItem
+public class IcedTea extends FoodItem
 {
     /**
-     * Create a new CocaCola object.
+     * Create a new IcedTea object.
      */
-    public CocaCola()
+    public IcedTea()
     {
         super();
-        name = "Coca Cola";
+        name = "Iced Tea";
         ingredients = "N/A";
         cost = 1.49;
     }

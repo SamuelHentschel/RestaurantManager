@@ -1,6 +1,4 @@
 package cs2114.restaurantmanager;
-
-// -------------------------------------------------------------------------
 /**
  *  Creates a new Hamburger object that has the item's specifications
  *  such as name, ingredients, etc.
@@ -10,7 +8,6 @@ package cs2114.restaurantmanager;
  */
 public class Hamburger extends FoodItem
 {
-    // ----------------------------------------------------------
     /**
      * Create a new Hamburger object.
      */
@@ -19,7 +16,8 @@ public class Hamburger extends FoodItem
         super();
         name = "Hamburger";
         ingredients = "One hamburger bun, one hamburger patty, lettuce, "
-            + "one slice of tomato, onions and two pickles";
+            + "one slice of tomato, onions and two pickles. Served with"
+            + "fries.";
         cost = 4.99;
     }
 

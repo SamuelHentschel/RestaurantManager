@@ -1,15 +1,13 @@
 package cs2114.restaurantmanager;
-
-// -------------------------------------------------------------------------
 /**
- *  Creates a Hot Dog menu item that extends FoodItem.
+ *  A hotdog class that contains the menu item's
+ *  specifications.
  *
  *  @author Calogero Ramirez (frcalo5)
  *  @version Mar 26, 2015
  */
 public class HotDog extends FoodItem
 {
-    // ----------------------------------------------------------
     /**
      * Create a new HotDog object.
      */
@@ -17,7 +15,8 @@ public class HotDog extends FoodItem
     {
         super();
         name = "Hot Dog";
-        ingredients = "1 Weiner, 1 Bun, light mustard and ketchup";
+        ingredients = "1 Weiner, 1 Bun, light mustard and ketchup. Served "
+            + "with fries.";
         cost = 2.99;
     }
 }
