@@ -169,7 +169,7 @@ class FoodItem
 
     public String toString()
     {
-        return name + "\t" + cost + "\n" + "Ingredients: " + ingredients + "\n"
+        return name + "\t" + String.format("%.2f", cost) + "\n" + "Ingredients: " + ingredients + "\n"
             + "Notes:\t" + note;
     }
 }

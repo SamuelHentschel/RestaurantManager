@@ -27,7 +27,7 @@ class ProcessColor
     /**
      * A field that relates a table who's food is cooking to the color orange.
      */
-    public static final Color COOKING = Color.blue;
+    public static final Color COOKING = Color.orange;
     /**
      * A field that relates a table who's food is done cooking to the color red.
      */
