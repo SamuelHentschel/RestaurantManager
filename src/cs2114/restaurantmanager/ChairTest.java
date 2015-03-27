@@ -5,7 +5,7 @@ import student.TestCase;
 /**
  *  A suite of test methods to test the behavior of the Chair class.
  *
- *  @author Sam
+ *  @author Samuel Hentschel (samh95)
  *  @version Mar 26, 2015
  */
 public class ChairTest
