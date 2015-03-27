@@ -3,7 +3,7 @@ package cs2114.restaurantmanager;
  *  Creates a new Hamburger object that has the item's specifications
  *  such as name, ingredients, etc.
  *
- *  @author Calogero
+ *  @author Calogero Ramirez (frcalo5)
  *  @version Mar 26, 2015
  */
 public class Hamburger extends FoodItem

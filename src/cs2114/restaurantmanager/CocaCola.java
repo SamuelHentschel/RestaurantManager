@@ -1,8 +1,9 @@
 package cs2114.restaurantmanager;
 /**
- *  Creates a Coca Cola object
+ *  Creates a Coca Cola class that contains
+ *  the menu item's specifications.
  *
- *  @author Calogero
+ *  @author Calogero Ramirez (frcalo5)
  *  @version Mar 26, 2015
  */
 public class CocaCola extends FoodItem
