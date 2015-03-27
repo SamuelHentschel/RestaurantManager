@@ -1,5 +1,7 @@
 package cs2114.restaurantmanager;
 
+import java.util.ArrayList;
+
 /**
  *  Create a new Chair which holds the specific orders of a specific customer.
  *
@@ -9,7 +11,7 @@ package cs2114.restaurantmanager;
 class Chair
 {
     //Fields
-    private FoodItem[] orders;
+    private ArrayList<FoodItem> orders;
 
     //Constructors
     /**
@@ -17,7 +19,7 @@ class Chair
      */
     public Chair()
     {
-        orders = new FoodItem[10];
+        orders = new ArrayList<FoodItem>();
     }
 
     /**
@@ -25,7 +27,7 @@ class Chair
      *
      * @return      Returns the array used to hold the person's orders.
      */
-    public FoodItem[] getOrders()
+    public ArrayList<FoodItem> getOrders()
     {
         return orders;
     }
