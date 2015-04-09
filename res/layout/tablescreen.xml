@@ -9,15 +9,7 @@
     tools:context="cs2114.restaurantmanager.MainScreen" >
 
     <Button
-        android:id="@+id/backToTable"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:text="Menu" />
-
-    <Button
-        android:id="@+id/talbe1"
+        android:id="@+id/table1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/backToTable"
@@ -29,8 +21,8 @@
         android:id="@+id/table5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/talbe1"
-        android:layout_below="@+id/talbe1"
+        android:layout_alignLeft="@+id/table1"
+        android:layout_below="@+id/table1"
         android:text="T 05" />
 
     <Button
@@ -61,8 +53,8 @@
         android:id="@+id/table2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/talbe1"
-        android:layout_toRightOf="@+id/talbe1"
+        android:layout_alignBottom="@+id/table1"
+        android:layout_toRightOf="@+id/table1"
         android:text="T 02" />
 
     <Button
@@ -188,5 +180,13 @@
         android:layout_alignBottom="@+id/table19"
         android:layout_toRightOf="@+id/table19"
         android:text="T 20" />
+
+    <Button
+        android:id="@+id/tableToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table17"
+        android:layout_marginTop="24dp"
+        android:text="Menu" />
 
 </RelativeLayout>

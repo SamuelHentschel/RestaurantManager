@@ -6,7 +6,7 @@ import sofia.app.Screen;
 import android.widget.*;
 import sofia.app.ScreenLayout;
 
-public class OrderScreen
+public class ManagerScreen
     extends Screen
 {
 
@@ -16,9 +16,9 @@ public class OrderScreen
     }
 
 
-    public void orderToChairClicked()
+    public void managerToMenuClicked()
     {
-        presentScreen(ChairScreen.class);
+        presentScreen(MainScreen.class);
         finish();
     }
 }

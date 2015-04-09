@@ -16,7 +16,7 @@ public class BillScreen
     }
 
 
-    public void backToChairClicked()
+    public void billToChairClicked()
     {
         presentScreen(ChairScreen.class);
         finish();

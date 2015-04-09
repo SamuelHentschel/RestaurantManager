@@ -9,7 +9,7 @@
     tools:context="cs2114.restaurantmanager.MainScreen" >
 
     <Button
-        android:id="@+id/backToTable"
+        android:id="@+id/tableToMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -20,8 +20,8 @@
         android:id="@+id/chair1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/backToTable"
-        android:layout_below="@+id/backToTable"
+        android:layout_alignLeft="@+id/tableToMenu"
+        android:layout_below="@+id/tableToMenu"
         android:text="Chair1" />
 
     <Button
@@ -108,7 +108,7 @@
         android:id="@+id/tableNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/backToTable"
+        android:layout_alignBaseline="@+id/tableToMenu"
         android:layout_centerHorizontal="true"
         android:text="Table #"
         android:textAppearance="?android:attr/textAppearanceLarge" />
