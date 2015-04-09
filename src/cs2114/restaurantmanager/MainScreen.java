@@ -30,4 +30,15 @@ public class MainScreen
         finish();
     }
 
+    public void cookersTableClicked()
+    {
+        presentScreen(TableScreen.class);
+        finish();
+    }
+
+    public void managersTableClicked()
+    {
+        presentScreen(TableScreen.class);
+        finish();
+    }
 }

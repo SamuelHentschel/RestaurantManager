@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cs2114.restaurantmanager.MainScreen" >
+
+    <Button
+        android:id="@+id/backToTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Table" />
+
+    <Button
+        android:id="@+id/chair1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/backToTable"
+        android:layout_below="@+id/backToTable"
+        android:text="Chair1" />
+
+    <Button
+        android:id="@+id/chair4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chair1"
+        android:layout_below="@+id/chair1"
+        android:text="Chair4" />
+
+    <Button
+        android:id="@+id/chair2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chair1"
+        android:layout_toRightOf="@+id/chair1"
+        android:text="Chair2" />
+
+    <Button
+        android:id="@+id/chair3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chair2"
+        android:layout_alignBottom="@+id/chair2"
+        android:layout_toRightOf="@+id/chair2"
+        android:text="Chair3" />
+
+    <Button
+        android:id="@+id/chair5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chair4"
+        android:layout_alignBottom="@+id/chair4"
+        android:layout_toRightOf="@+id/chair4"
+        android:text="Chair5" />
+
+    <Button
+        android:id="@+id/chair6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chair5"
+        android:layout_toRightOf="@+id/chair5"
+        android:text="Chair6" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chair4"
+        android:layout_alignRight="@+id/chair6"
+        android:layout_below="@+id/chair4"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bill1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bill 1" />
+
+        <Button
+            android:id="@+id/bill2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bill 2" />
+
+        <Button
+            android:id="@+id/bill3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bill 3" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clearTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="28dp"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/tableNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/backToTable"
+        android:layout_centerHorizontal="true"
+        android:text="Table #"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

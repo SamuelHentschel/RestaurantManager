@@ -28,6 +28,10 @@
             </intent-filter>
         </activity>
         <activity android:name="TableScreen" />
+        <activity android:name="ChairScreen" />
+        <activity android:name="OrderScreen" />
+        <activity android:name="BillScreen" />
+        <activity android:name="CookerScreen" />
     </application>
 
 </manifest>
