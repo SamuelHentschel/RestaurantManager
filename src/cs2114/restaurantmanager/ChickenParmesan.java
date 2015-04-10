@@ -4,7 +4,7 @@ package cs2114.restaurantmanager;
  *  item's specifications.
  *
  *  @author Calogero Ramirez (frcalo5)
- *  @version Mar 26, 2015
+ *  @version 2015.04.10
  */
 public class ChickenParmesan extends FoodItem
 {
@@ -16,7 +16,8 @@ public class ChickenParmesan extends FoodItem
         super();
         name = "Chicken Parmesan";
         ingredients = "Crispy, hand-breaded fried chicken strips topped"
-            + " with marinara and mozzarella cheese.";
+            + " with marinara and mozzarella cheese. Served on top of "
+            + "a plate of buttered, angel hair pasta.";
         cost = 14.99;
     }
 }

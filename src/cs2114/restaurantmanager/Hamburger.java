@@ -4,7 +4,7 @@ package cs2114.restaurantmanager;
  *  such as name, ingredients, etc.
  *
  *  @author Calogero Ramirez (frcalo5)
- *  @version Mar 26, 2015
+ *  @version 2015.03.26
  */
 public class Hamburger extends FoodItem
 {
@@ -15,8 +15,8 @@ public class Hamburger extends FoodItem
     {
         super();
         name = "Hamburger";
-        ingredients = "One hamburger bun, one hamburger patty, lettuce, "
-            + "one slice of tomato, onions and two pickles. Served with"
+        ingredients = "Two hamburger bun, one hamburger patty, lettuce, "
+            + "one slice of tomato, onions and two pickles. Served with "
             + "fries.";
         cost = 4.99;
     }

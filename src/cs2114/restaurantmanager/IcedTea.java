@@ -1,10 +1,11 @@
 package cs2114.restaurantmanager;
 /**
  *  Iced tea class that contains the menu item's
- *  specifications.
+ *  specifications such as name, ingredients and
+ *  cost.
  *
  *  @author Calogero Ramirez (frcalo5)
- *  @version Mar 26, 2015
+ *  @version 2015.03.26
  */
 public class IcedTea extends FoodItem
 {
@@ -15,7 +16,8 @@ public class IcedTea extends FoodItem
     {
         super();
         name = "Iced Tea";
-        ingredients = "N/A";
+        ingredients = "One spoon of lipton iced tea powered mix,"
+            + " a cup of water and ice with a slice of lemon.";
         cost = 1.49;
     }
 }

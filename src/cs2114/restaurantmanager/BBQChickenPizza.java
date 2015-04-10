@@ -4,7 +4,7 @@ package cs2114.restaurantmanager;
  *  item's specifications.
  *
  *  @author Calogero Ramirez (frcalo5)
- *  @version Mar 26, 2015
+ *  @version 2015.04.10
  */
 public class BBQChickenPizza extends FoodItem
 {

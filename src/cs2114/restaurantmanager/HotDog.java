@@ -4,7 +4,7 @@ package cs2114.restaurantmanager;
  *  specifications.
  *
  *  @author Calogero Ramirez (frcalo5)
- *  @version Mar 26, 2015
+ *  @version 2015.03.26
  */
 public class HotDog extends FoodItem
 {
