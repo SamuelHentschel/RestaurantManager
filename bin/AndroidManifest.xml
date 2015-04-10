@@ -27,6 +27,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="ChairScreen" />
+        <activity android:name="TableScreen" />
+        <activity android:name="OrderScreen" />
+        <activity android:name="BillScreen" />
+        <activity android:name="CookerScreen" />
+        <activity android:name="ManagerScreen" />
     </application>
 
 </manifest>

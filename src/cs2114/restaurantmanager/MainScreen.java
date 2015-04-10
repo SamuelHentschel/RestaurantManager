@@ -1,9 +1,11 @@
 package cs2114.restaurantmanager;
 
+
 import sofia.graphics.Color;
 import android.graphics.RectF;
-import sofia.app.ShapeScreen;
+import sofia.app.Screen;
 import android.widget.*;
+import sofia.app.ScreenLayout;
 
 // -------------------------------------------------------------------------
 /**
@@ -14,7 +16,7 @@ import android.widget.*;
  *  @version 2015.03.20
  */
 public class MainScreen
-    extends ShapeScreen
+    extends Screen
 {
 
     public void initialize()
@@ -22,4 +24,21 @@ public class MainScreen
 
     }
 
+    public void serversTableClicked()
+    {
+        presentScreen(TableScreen.class);
+        finish();
+    }
+
+    public void cookersListClicked()
+    {
+        presentScreen(CookerScreen.class);
+        finish();
+    }
+
+    public void managersDataClicked()
+    {
+        presentScreen(ManagerScreen.class);
+        finish();
+    }
 }

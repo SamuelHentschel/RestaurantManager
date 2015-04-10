@@ -8,9 +8,44 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="cs2114.restaurantmanager.MainScreen" >
 
+    
     <TextView
+        android:id="@+id/tableNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:text="Restaurant Manager"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="27dp" />
+        
+    
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:orientation="vertical" 
+            android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/serversTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Server&apos;s" />
+
+	    <Button
+	        android:id="@+id/cookersList"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Chef&apos;s" />
+        
+	    <Button
+            android:id="@+id/managersData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manager&apos;s" />
+	    
+    </LinearLayout>
 
 </RelativeLayout>
