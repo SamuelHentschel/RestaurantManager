@@ -26,7 +26,7 @@ public final class R {
         public static final int table=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080037;
+        public static final int action_settings=0x7f080038;
         public static final int addBill=0x7f08001e;
         public static final int allData=0x7f08001f;
         public static final int backToMenu=0x7f080015;
@@ -42,6 +42,7 @@ public final class R {
         public static final int chair5=0x7f08000b;
         public static final int chair6=0x7f08000c;
         public static final int chairNum=0x7f080020;
+        public static final int chairToTable=0x7f080006;
         public static final int clearAll=0x7f08001d;
         public static final int clearOrder=0x7f080021;
         public static final int clearTable=0x7f080011;
@@ -78,7 +79,7 @@ public final class R {
         public static final int table8=0x7f08002d;
         public static final int table9=0x7f080025;
         public static final int tableNum=0x7f080012;
-        public static final int tableToMenu=0x7f080006;
+        public static final int tableToMenu=0x7f080037;
         public static final int toDoList=0x7f080014;
         public static final int totalData=0x7f080001;
         public static final int totalView=0x7f080005;

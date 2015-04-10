@@ -23,7 +23,7 @@
         android:layout_alignBaseline="@+id/orderToChair"
         android:layout_alignBottom="@+id/orderToChair"
         android:layout_centerHorizontal="true"
-        android:text="Chair #"
+        android:text="Bill"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ScrollView
@@ -59,7 +59,7 @@
         android:layout_alignRight="@+id/subtotalView"
         android:layout_alignTop="@+id/subtotalView"
         android:layout_marginTop="30dp"
-        android:text="totalview"
+        android:text="total"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

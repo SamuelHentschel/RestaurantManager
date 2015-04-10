@@ -2,7 +2,7 @@ int dimen activity_horizontal_margin 0x7f060000
 int dimen activity_vertical_margin 0x7f060001
 int drawable ic_launcher 0x7f020000
 int drawable table 0x7f020001
-int id action_settings 0x7f080037
+int id action_settings 0x7f080038
 int id addBill 0x7f08001e
 int id allData 0x7f08001f
 int id backToMenu 0x7f080015
@@ -18,6 +18,7 @@ int id chair4 0x7f080008
 int id chair5 0x7f08000b
 int id chair6 0x7f08000c
 int id chairNum 0x7f080020
+int id chairToTable 0x7f080006
 int id clearAll 0x7f08001d
 int id clearOrder 0x7f080021
 int id clearTable 0x7f080011
@@ -54,7 +55,7 @@ int id table7 0x7f08002c
 int id table8 0x7f08002d
 int id table9 0x7f080025
 int id tableNum 0x7f080012
-int id tableToMenu 0x7f080006
+int id tableToMenu 0x7f080037
 int id toDoList 0x7f080014
 int id totalData 0x7f080001
 int id totalView 0x7f080005

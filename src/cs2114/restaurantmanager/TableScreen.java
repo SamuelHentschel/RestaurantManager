@@ -17,6 +17,13 @@ public class TableScreen
 
     }
 
+
+    public void tableToMenuClicked()
+    {
+        presentScreen(MainScreen.class);
+        finish();
+    }
+
     public void table1Clicked()
     {
         tableNum = 1;
@@ -134,15 +141,10 @@ public class TableScreen
     }
     public void table20Clicked()
     {
-
+        tableNum = 20;
         presentScreen(ChairScreen.class);
         finish();
     }
 
 
-    public void tableToMenuClicked()
-    {
-        presentScreen(MainScreen.class);
-        finish();
-    }
 }
