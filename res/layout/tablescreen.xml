@@ -9,15 +9,6 @@
     tools:context="cs2114.restaurantmanager.MainScreen" >
 
     <Button
-        android:id="@+id/table1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/backToTable"
-        android:layout_below="@+id/backToTable"
-        android:layout_marginTop="23dp"
-        android:text="T 01" />
-
-    <Button
         android:id="@+id/table5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -185,8 +176,16 @@
         android:id="@+id/tableToMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/table17"
-        android:layout_marginTop="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:text="Menu" />
+
+    <Button
+        android:id="@+id/table1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tableToMenu"
+        android:layout_below="@+id/tableToMenu"
+        android:text="T 01" />
 
 </RelativeLayout>

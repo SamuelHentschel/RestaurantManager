@@ -23,17 +23,17 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int table=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080036;
-        public static final int addBill=0x7f080003;
-        public static final int allData=0x7f08001e;
+        public static final int action_settings=0x7f080037;
+        public static final int addBill=0x7f08001e;
+        public static final int allData=0x7f08001f;
         public static final int backToMenu=0x7f080015;
-        public static final int backToTable=0x7f080022;
         public static final int bill1=0x7f08000e;
         public static final int bill2=0x7f08000f;
         public static final int bill3=0x7f080010;
-        public static final int billList=0x7f080005;
+        public static final int billList=0x7f080003;
         public static final int billToChair=0x7f080000;
         public static final int chair1=0x7f080007;
         public static final int chair2=0x7f080009;
@@ -41,9 +41,9 @@ public final class R {
         public static final int chair4=0x7f080008;
         public static final int chair5=0x7f08000b;
         public static final int chair6=0x7f08000c;
-        public static final int chairNum=0x7f08001f;
+        public static final int chairNum=0x7f080020;
         public static final int clearAll=0x7f08001d;
-        public static final int clearOrder=0x7f080004;
+        public static final int clearOrder=0x7f080021;
         public static final int clearTable=0x7f080011;
         public static final int clearToDo=0x7f080016;
         public static final int completeList=0x7f080013;
@@ -54,32 +54,34 @@ public final class R {
         public static final int managersData=0x7f08001b;
         public static final int orderToChair=0x7f080002;
         public static final int scrollView2=0x7f080017;
-        public static final int selectFood=0x7f080020;
+        public static final int selectFood=0x7f080022;
         public static final int serversTable=0x7f080019;
-        public static final int table1=0x7f080021;
-        public static final int table10=0x7f08002d;
-        public static final int table11=0x7f08002e;
-        public static final int table12=0x7f08002f;
-        public static final int table13=0x7f080025;
-        public static final int table14=0x7f080030;
-        public static final int table15=0x7f080031;
-        public static final int table16=0x7f080032;
-        public static final int table17=0x7f080026;
-        public static final int table18=0x7f080033;
-        public static final int table19=0x7f080034;
-        public static final int table2=0x7f080027;
-        public static final int table20=0x7f080035;
-        public static final int table3=0x7f080028;
-        public static final int table4=0x7f080029;
+        public static final int subtotalView=0x7f080004;
+        public static final int table1=0x7f080024;
+        public static final int table10=0x7f08002e;
+        public static final int table11=0x7f08002f;
+        public static final int table12=0x7f080030;
+        public static final int table13=0x7f080026;
+        public static final int table14=0x7f080031;
+        public static final int table15=0x7f080032;
+        public static final int table16=0x7f080033;
+        public static final int table17=0x7f080027;
+        public static final int table18=0x7f080034;
+        public static final int table19=0x7f080035;
+        public static final int table2=0x7f080028;
+        public static final int table20=0x7f080036;
+        public static final int table3=0x7f080029;
+        public static final int table4=0x7f08002a;
         public static final int table5=0x7f080023;
-        public static final int table6=0x7f08002a;
-        public static final int table7=0x7f08002b;
-        public static final int table8=0x7f08002c;
-        public static final int table9=0x7f080024;
+        public static final int table6=0x7f08002b;
+        public static final int table7=0x7f08002c;
+        public static final int table8=0x7f08002d;
+        public static final int table9=0x7f080025;
         public static final int tableNum=0x7f080012;
         public static final int tableToMenu=0x7f080006;
         public static final int toDoList=0x7f080014;
         public static final int totalData=0x7f080001;
+        public static final int totalView=0x7f080005;
     }
     public static final class layout {
         public static final int billscreen=0x7f030000;
