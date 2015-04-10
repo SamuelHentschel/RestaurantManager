@@ -24,6 +24,10 @@ class Table
         numChairs = chairs;
         this.chairs = new Chair[chairs];
         bills = new Bill[chairs];
+        for (int i = 0; i < chairs;i++)
+        {
+            this.chairs[i] = new Chair();
+        }
     }
 
     /**

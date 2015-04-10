@@ -10,6 +10,7 @@ class Chair
 {
     //Fields
     private FoodItem[] orders;
+    private int current;
 
     //Constructors
     /**
@@ -18,6 +19,7 @@ class Chair
     public Chair()
     {
         orders = new FoodItem[10];
+        current = 0;
     }
 
     /**
@@ -28,5 +30,26 @@ class Chair
     public FoodItem[] getOrders()
     {
         return orders;
+    }
+
+    /**
+     * Adds specified order to the array.
+     *
+     * @param item  The specified FoodItem to be added to the array.
+     */
+    public void add(FoodItem item)
+    {
+        orders[current] = item;
+        current++;
+    }
+
+    /**
+     * Get the number of FoodItems in the array.
+     *
+     * @return      Returns the number of FoodItems in the array.
+     */
+    public int getSize()
+    {
+        return current;
     }
 }

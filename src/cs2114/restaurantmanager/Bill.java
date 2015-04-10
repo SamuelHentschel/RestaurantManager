@@ -12,8 +12,8 @@ class Bill
     private FoodItem[] orders;
     private final static double localTax = 0.06;
     private final static double stateTax = 0.053;
-    private double subtotal;
-    private double total;
+    private double subtotal = 0;
+    private double total = 0;
 
     //Constructors
     /**
@@ -40,6 +40,7 @@ class Bill
         {
             sum = sum + item.getCost();
         }
+        subtotal = sum;
         return sum;
     }
 
@@ -52,6 +53,7 @@ class Bill
     {
         double sum  = subtotal();
         sum = sum + (sum * (stateTax + localTax));
+        total = sum;
         return sum;
     }
 
@@ -60,7 +62,7 @@ class Bill
      *
      * @return      Returns the array holding all the orders on this Bill.
      */
-    public FoodItem[] getOrers()
+    public FoodItem[] getOrders()
     {
         return orders;
     }
@@ -91,12 +93,12 @@ class Bill
             + "//////////------------///////////\n";
         for(FoodItem item: orders)
         {
-            str = str + item.getName() + "\n\t" + item.getCost() + "\n";
+            str = str + item.getName() + "\n\t" + String.format("%.2f", item.getCost()) + "\n";
         }
         str = str + "----------------------------------\n"
-            + "         SUBTOTAL\t" + subtotal + "\n"
+            + "         SUBTOTAL\t" + String.format("%.2f", subtotal()) + "\n"
             + "----------------------------------\n"
-            + "         TOTAL\t" + total + "\n"
+            + "         TOTAL\t" + String.format("%.2f", total()) + "\n"
             + "----------------------------------\n";
         return str;
     }
