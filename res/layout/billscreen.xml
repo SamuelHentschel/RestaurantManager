@@ -9,7 +9,7 @@
     tools:context="cs2114.restaurantmanager.MainScreen" >
 
     <Button
-        android:id="@+id/billToChair"
+        android:id="@+id/billToTable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -17,23 +17,23 @@
         android:text="Chair" />
 
     <TextView
-        android:id="@+id/totalData"
+        android:id="@+id/billView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/orderToChair"
-        android:layout_alignBottom="@+id/orderToChair"
+        android:layout_alignBaseline="@+id/chairToTable"
+        android:layout_alignBottom="@+id/chairToTable"
         android:layout_centerHorizontal="true"
         android:text="Bill"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ScrollView
-        android:id="@+id/billList"
+        android:id="@+id/foodList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/subtotalView"
-        android:layout_alignLeft="@+id/billToChair"
+        android:layout_alignLeft="@+id/billToTable"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/billToChair" >
+        android:layout_below="@+id/billToTable" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/billList"
+        android:layout_alignRight="@+id/foodList"
         android:layout_marginBottom="67dp"
         android:text="subtotal"
         android:textAppearance="?android:attr/textAppearanceLarge" />

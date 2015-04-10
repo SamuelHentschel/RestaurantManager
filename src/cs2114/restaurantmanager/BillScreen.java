@@ -16,9 +16,9 @@ public class BillScreen
     }
 
 
-    public void billToChairClicked()
+    public void billToTableClicked()
     {
-        presentScreen(ChairScreen.class);
+        presentScreen(TableScreen.class);
         finish();
     }
 }

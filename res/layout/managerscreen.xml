@@ -17,11 +17,11 @@
         android:text="Menu" />
 
     <TextView
-        android:id="@+id/totalData"
+        android:id="@+id/billView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/orderToChair"
-        android:layout_alignBottom="@+id/orderToChair"
+        android:layout_alignBaseline="@+id/chairToTable"
+        android:layout_alignBottom="@+id/chairToTable"
         android:layout_centerHorizontal="true"
         android:text="Total Data"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -32,7 +32,7 @@
         android:id="@+id/clearAll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/addBill"
+        android:layout_alignLeft="@+id/addFood"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="39dp"
         android:text="Clear" />

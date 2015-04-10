@@ -9,142 +9,63 @@ import sofia.app.ScreenLayout;
 public class TableScreen
     extends Screen
 {
-    protected int tableNum;
-
 
     public void initialize()
     {
 
     }
 
-
-    public void tableToMenuClicked()
+    public void chair1Clicked()
     {
-        presentScreen(MainScreen.class);
-        finish();
-    }
-
-    public void table1Clicked()
-    {
-        tableNum = 1;
         presentScreen(ChairScreen.class);
         finish();
     }
-
-    public void table2Clicked()
+    public void chair2Clicked()
     {
-        tableNum = 2;
         presentScreen(ChairScreen.class);
         finish();
     }
-    public void table3Clicked()
+    public void chair3Clicked()
     {
-        tableNum = 3;
         presentScreen(ChairScreen.class);
         finish();
     }
-    public void table4Clicked()
+    public void chair4Clicked()
     {
-        tableNum = 4;
         presentScreen(ChairScreen.class);
         finish();
     }
-    public void table5Clicked()
+    public void chair5Clicked()
     {
-        tableNum = 5;
         presentScreen(ChairScreen.class);
         finish();
     }
-    public void table6Clicked()
+    public void chair6Clicked()
     {
-        tableNum = 6;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table7Clicked()
-    {
-        tableNum = 7;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table8Clicked()
-    {
-        tableNum = 8;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table9Clicked()
-    {
-        tableNum = 9;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table10Clicked()
-    {
-        tableNum = 10;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table11Clicked()
-    {
-        tableNum = 11;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table12Clicked()
-    {
-        tableNum = 12;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table13Clicked()
-    {
-        tableNum = 13;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table14Clicked()
-    {
-        tableNum = 14;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table15Clicked()
-    {
-        tableNum = 15;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table16Clicked()
-    {
-        tableNum = 16;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table17Clicked()
-    {
-        tableNum = 17;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table18Clicked()
-    {
-        tableNum = 18;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table19Clicked()
-    {
-        tableNum = 19;
-        presentScreen(ChairScreen.class);
-        finish();
-    }
-    public void table20Clicked()
-    {
-        tableNum = 20;
         presentScreen(ChairScreen.class);
         finish();
     }
 
 
+    public void bill1Clicked()
+    {
+        presentScreen(BillScreen.class);
+        finish();
+    }
+    public void bill2Clicked()
+    {
+        presentScreen(BillScreen.class);
+        finish();
+    }
+    public void bill3Clicked()
+    {
+        presentScreen(BillScreen.class);
+        finish();
+    }
+
+    public void tableToServerClicked()
+    {
+        presentScreen(ServerScreen.class);
+        finish();
+    }
 }
