@@ -16,7 +16,7 @@ public class CookerScreen
     }
 
 
-    public void backToMenuClicked()
+    public void cookerToMenuClicked()
     {
         presentScreen(MainScreen.class);
         finish();

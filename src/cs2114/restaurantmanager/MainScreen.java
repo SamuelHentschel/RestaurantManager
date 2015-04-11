@@ -26,7 +26,7 @@ public class MainScreen
 
     public void serversTableClicked()
     {
-        presentScreen(TableScreen.class);
+        presentScreen(ServerScreen.class);
         finish();
     }
 

@@ -18,7 +18,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/backToMenu"
+        android:id="@+id/cookerToMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -30,13 +30,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/backToMenu"
+        android:layout_below="@+id/cookerToMenu"
         android:layout_marginTop="16dp"
         android:text="TODO List"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ScrollView
-        android:id="@+id/billList"
+        android:id="@+id/foodList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/clearToDo"
@@ -55,10 +55,10 @@
         android:id="@+id/scrollView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/billList"
+        android:layout_alignBottom="@+id/foodList"
         android:layout_alignLeft="@+id/completeList"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/billList" >
+        android:layout_alignTop="@+id/foodList" >
 
         <LinearLayout
             android:layout_width="match_parent"
