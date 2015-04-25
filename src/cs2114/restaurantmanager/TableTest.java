@@ -29,7 +29,7 @@ public class TableTest
     public void setUp()
     {
         tableSetChairs = new Table(3);
-        table = new Table();
+        //table = new Table();
         item = new FoodItem();
         item.name = "item1";
     }

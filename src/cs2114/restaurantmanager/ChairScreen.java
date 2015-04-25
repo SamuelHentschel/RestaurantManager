@@ -9,10 +9,15 @@ import sofia.app.ScreenLayout;
 public class ChairScreen
     extends Screen
 {
+    private Restaurant restaurant;
+    private int table;
+    private int chair;
 
-    public void initialize()
+    public void initialize(Restaurant rest, int tableNum, int chairNum)
     {
-
+        restaurant = rest;
+        table = tableNum;
+        chair = chairNum;
     }
 
 
