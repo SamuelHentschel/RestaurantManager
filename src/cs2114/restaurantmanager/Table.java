@@ -9,6 +9,7 @@ package cs2114.restaurantmanager;
 class Table
 {
     //Fields
+    private int table;
     private int numChairs;
     private Chair[] chairs;
     private Bill[] bills;
@@ -17,10 +18,12 @@ class Table
     /**
      * Creates a new Table object with the specified amount of Chairs.
      *
+     * @param tableNum  The number of the specific table.
      * @param chairs    The specified amount of chairs.
      */
-    public Table(int chairs)
+    public Table(int tableNum, int chairs)
     {
+        table = tableNum;
         numChairs = chairs;
         this.chairs = new Chair[chairs];
         bills = new Bill[chairs];
@@ -32,10 +35,12 @@ class Table
 
     /**
      * Creates a new Table object with the default number of Chairs (4).
+     *
+     * @param tableNum   The number of the specific table.
      */
-    public Table()
+    public Table(int tableNum)
     {
-        this(4);
+        this(tableNum, 6);
     }
 
     //Methods
@@ -67,5 +72,15 @@ class Table
     public Bill[] getBills()
     {
         return bills;
+    }
+
+    /**
+     * Gets the number of the table.
+     *
+     * @return      Returns the table number.
+     */
+    public int number()
+    {
+        return table;
     }
 }
