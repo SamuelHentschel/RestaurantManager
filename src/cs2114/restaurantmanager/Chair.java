@@ -1,5 +1,7 @@
 package cs2114.restaurantmanager;
 
+
+import sofia.util.*;
 /**
  *  Create a new Chair which holds the specific orders of a specific customer.
  *
@@ -7,6 +9,7 @@ package cs2114.restaurantmanager;
  *  @version Mar 25, 2015
  */
 class Chair
+    extends Observable
 {
     //Fields
     private FoodItem[] orders;
@@ -41,6 +44,7 @@ class Chair
     {
         orders[current] = item;
         current++;
+        notifyObservers();
     }
 
     /**
