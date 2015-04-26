@@ -1,5 +1,6 @@
 package cs2114.restaurantmanager;
 
+import android.widget.*;
 import sofia.app.Screen;
 
 /**
@@ -15,6 +16,7 @@ public class TableScreen
     private Restaurant restaurant;
     private int tableNumber;
     private Table table;
+    private TextView tableNum;
 
     /**
      * Initializes restaurant as the current array of tables.
@@ -26,7 +28,17 @@ public class TableScreen
     {
         restaurant = rest;
         tableNumber = tNum;
-        table = new Table(tableNumber-1);
+
+        if (restaurant.getTables()[tableNumber-1] != null)
+        {
+            table = restaurant.getTables()[tableNumber-1];
+        }
+        else
+        {
+            table = new Table(tableNumber-1);
+        }
+
+        tableNum.setText("Table " + tableNumber);
     }
 
     /**

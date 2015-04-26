@@ -53,7 +53,7 @@ public class MainScreen
      */
     public void cookersListClicked()
     {
-        presentScreen(CookerScreen.class);
+        presentScreen(CookerScreen.class, restaurant);
         finish();
     }
 
@@ -62,7 +62,7 @@ public class MainScreen
      */
     public void managersDataClicked()
     {
-        presentScreen(ManagerScreen.class);
+        presentScreen(ManagerScreen.class, restaurant);
         finish();
     }
 }
