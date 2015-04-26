@@ -1,5 +1,6 @@
 package cs2114.restaurantmanager;
 
+import android.widget.Button;
 import sofia.app.Screen;
 
 /**
@@ -10,9 +11,30 @@ import sofia.app.Screen;
  *  @version 2015.04.24
  */
 public class ServerScreen
-    extends Screen
+extends Screen
 {
     private Restaurant restaurant;
+    private Button table1;
+    private Button table2;
+    private Button table3;
+    private Button table4;
+    private Button table5;
+    private Button table6;
+    private Button table7;
+    private Button table8;
+    private Button table9;
+    private Button table10;
+    private Button table11;
+    private Button table12;
+    private Button table13;
+    private Button table14;
+    private Button table15;
+    private Button table16;
+    private Button table17;
+    private Button table18;
+    private Button table19;
+    private Button table20;
+    private Button[] buttons;
 
     /**
      * Initializes restaurant as the current array of tables.
@@ -22,6 +44,85 @@ public class ServerScreen
     public void initialize(Restaurant rest)
     {
         restaurant = rest;
+        buttons = new Button[] {table1, table2, table3, table4, table5, table6,
+            table7, table8, table9, table10, table11, table12, table13, table14,
+            table15, table16, table17, table18, table19, table20};
+
+        //Going through Tables
+        for (int i = 0; i < restaurant.getTables().length; i++)
+        {
+            Table tempTable = restaurant.getTables()[i];
+            if (tempTable == null)
+            {
+                buttons[i].setBackgroundColor(ProcessColor.CLEAR);
+            }
+            else
+            {
+                //Going through Chairs
+                int maxChair = 4;
+                int nullCount = 0;
+                for (int j = 0; j < tempTable.getNumChairs(); j++)
+                {
+                    Chair tempChair = tempTable.getChairs()[j];
+                    if (tempChair != null)
+                    {
+                        int maxOrder = 4;
+                        //Going through Orders of a Chair
+                        if (tempChair.getSize() == 0)
+                        {
+                            nullCount++;
+                        }
+                        else
+                        {
+                            for (int k = 0; k < tempChair.getSize(); k++)
+                            {
+                                if (tempChair.getOrders()[j].getTimeDelivered() != 0)
+                                {
+                                    if (4 < maxOrder) maxOrder = 4;
+                                }
+                                else if (tempChair.getOrders()[j].getTimeFinishedCooking() != 0)
+                                {
+                                    if (3 < maxOrder) maxOrder = 3;
+                                }
+                                else if (tempChair.getOrders()[j].getTimeStartedCooking() != 0)
+                                {
+                                    if (2 < maxOrder) maxOrder = 2;
+                                }
+                                else
+                                {
+                                    maxOrder = 1;
+                                }
+                            }
+                            if (maxOrder < maxChair) maxChair = maxOrder;
+                        }
+                    }
+                    else
+                    {
+                        nullCount++;
+                    }
+                }
+                if (nullCount == 6)
+                {
+                    buttons[i].setBackgroundColor(ProcessColor.SEATED);
+                }
+                else if (maxChair == 1)
+                {
+                    buttons[i].setBackgroundColor(ProcessColor.ORDERED);
+                }
+                else if (maxChair == 2)
+                {
+                    buttons[i].setBackgroundColor(ProcessColor.COOKING);
+                }
+                else if (maxChair == 3)
+                {
+                    buttons[i].setBackgroundColor(ProcessColor.COOKED);
+                }
+                else
+                {
+                    buttons[i].setBackgroundColor(ProcessColor.DELIVERED);
+                }
+            }
+        }
     }
 
     /**

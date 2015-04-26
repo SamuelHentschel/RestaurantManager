@@ -1,13 +1,16 @@
 package cs2114.restaurantmanager;
 
-import android.view.View;
-import android.widget.AdapterView;
-import sofia.graphics.Color;
-import android.graphics.RectF;
 import sofia.app.Screen;
 import android.widget.*;
-import sofia.app.ScreenLayout;
 
+/**
+ *  The controller for the chair screen which shows all the chairs that are in
+ *  the table chosen.
+ *
+ *  @author (LegitMe)
+ *  @author Samuel Hentschel (samh95)
+ *  @version 2014.04.24
+ */
 public class ChairScreen
     extends Screen
 {
@@ -29,8 +32,12 @@ public class ChairScreen
         tableNumber = tNum;
         chairNumber = cNum;
 
+        if (restaurant.getTables()[tableNumber-1].getChairs()[chairNumber-1] == null)
+        {
+            restaurant.getTables()[tableNumber-1].getChairs()[chairNumber-1] = new Chair();
+        }
 
-        chair = restaurant.getTables()[tableNumber - 1].getChairs()[chairNumber - 1];
+        chair = restaurant.getTables()[tableNumber-1].getChairs()[chairNumber-1];
 
         chair.addObserver(this);
 
@@ -58,6 +65,22 @@ public class ChairScreen
         {
             tv[i] = new TextView(this);
             tv[i].setText((i + 1) + " " + chair.getOrders()[i].getName());
+            if (chair.getOrders()[i].getTimeDelivered() != 0)
+            {
+                tv[i].setTextColor(ProcessColor.DELIVERED);
+            }
+            else if (chair.getOrders()[i].getTimeFinishedCooking() != 0)
+            {
+                tv[i].setTextColor(ProcessColor.COOKED);
+            }
+            else if (chair.getOrders()[i].getTimeStartedCooking() != 0)
+            {
+                tv[i].setTextColor(ProcessColor.COOKING);
+            }
+            else
+            {
+                tv[i].setTextColor(ProcessColor.ORDERED);
+            }
             foodList.addView(tv[i]);
         }
 
@@ -86,11 +109,12 @@ public class ChairScreen
 
         setContentView(R.layout.chairscreen);
         foodList = (LinearLayout)this.findViewById(R.id.foodList);
-        TextView[] tv = new TextView[10];
+        TextView[] tv = new TextView[chair.getSize()];
         for (int i = 0; i < chair.getSize(); i++)
         {
             tv[i] = new TextView(this);
             tv[i].setText((i + 1) + " " + chair.getOrders()[i].getName());
+            tv[i].setTextColor(ProcessColor.ORDERED);
             foodList.addView(tv[i]);
         }
         foodSpinner.setAdapter(adapter);

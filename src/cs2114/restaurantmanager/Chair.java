@@ -45,6 +45,7 @@ class Chair
         if (current < orders.length)
         {
             orders[current] = item;
+            item.setTimeOrdered();
             current++;
         }
         else

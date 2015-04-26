@@ -15,30 +15,30 @@ class ProcessColor
     /**
      * A field that relates a clear table to the color white.
      */
-    public static final Color CLEAR = Color.white;
+    public static int CLEAR = Color.white.toRawColor();
     /**
      * A field that relates a seated table to the color yellow.
      */
-    public static final Color SEATED = Color.yellow;
+    public static final int SEATED = Color.yellow.toRawColor();
     /**
      * A field that relates a table who has ordered to the color blue.
      */
-    public static final Color ORDERED = Color.blue;
+    public static final int ORDERED = Color.blue.toRawColor();
     /**
      * A field that relates a table who's food is cooking to the color orange.
      */
-    public static final Color COOKING = Color.orange;
+    public static final int COOKING = Color.orange.toRawColor();
     /**
      * A field that relates a table who's food is done cooking to the color red.
      */
-    public static final Color COOKED = Color.red;
+    public static final int COOKED = Color.red.toRawColor();
     /**
      * A field that relates a table who's food has been delivered to the color
      * green.
      */
-    public static final Color DELIVERED = Color.green;
+    public static final int DELIVERED = Color.green.toRawColor();
     /**
      * A field that relates a table that needs to be bussed to the color gray.
      */
-    public static final Color BUS = Color.gray;
+    public static final int BUS = Color.gray.toRawColor();
 }
