@@ -1,13 +1,16 @@
 package cs2114.restaurantmanager;
 
-import android.view.View;
-import android.widget.AdapterView;
-import sofia.graphics.Color;
-import android.graphics.RectF;
 import sofia.app.Screen;
 import android.widget.*;
-import sofia.app.ScreenLayout;
 
+/**
+ *  The controller for the chair screen which shows all the chairs that are in
+ *  the table chosen.
+ *
+ *  @author (LegitMe)
+ *  @author Samuel Hentschel (samh95)
+ *  @version 2014.04.24
+ */
 public class ChairScreen
     extends Screen
 {
@@ -29,8 +32,12 @@ public class ChairScreen
         tableNumber = tNum;
         chairNumber = cNum;
 
+        if (restaurant.getTables()[tableNumber-1].getChairs()[chairNumber-1] == null)
+        {
+            restaurant.getTables()[tableNumber-1].getChairs()[chairNumber-1] = new Chair();
+        }
 
-        chair = restaurant.getTables()[tableNumber - 1].getChairs()[chairNumber - 1];
+        chair = restaurant.getTables()[tableNumber-1].getChairs()[chairNumber-1];
 
         chair.addObserver(this);
 

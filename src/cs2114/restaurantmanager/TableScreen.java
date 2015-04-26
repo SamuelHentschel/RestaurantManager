@@ -17,6 +17,13 @@ public class TableScreen
     private int tableNumber;
     private Table table;
     private TextView tableNum;
+    private Button[] buttons;
+    private Button chair1;
+    private Button chair2;
+    private Button chair3;
+    private Button chair4;
+    private Button chair5;
+    private Button chair6;
 
     /**
      * Initializes restaurant as the current array of tables.
@@ -28,17 +35,68 @@ public class TableScreen
     {
         restaurant = rest;
         tableNumber = tNum;
+        buttons = new Button[] {chair1, chair2, chair3, chair4, chair5, chair6};
 
-        if (restaurant.getTables()[tableNumber-1] != null)
+        if (restaurant.getTables()[tableNumber-1] == null)
         {
-            table = restaurant.getTables()[tableNumber-1];
+            restaurant.getTables()[tableNumber-1] = new Table(tableNumber);
         }
-        else
-        {
-            table = new Table(tableNumber-1);
-        }
+
+        table = restaurant.getTables()[tableNumber-1];
 
         tableNum.setText("Table " + tableNumber);
+
+        for (int i = 0; i < table.getNumChairs(); i++)
+        {
+            Chair temp = table.getChairs()[i];
+            if (temp == null)
+            {
+                buttons[i].setBackgroundColor(ProcessColor.CLEAR);
+            }
+            else if(temp.getSize() == 0)
+            {
+                buttons[i].setBackgroundColor(ProcessColor.SEATED);
+            }
+            else
+            {
+                int max = 4;
+                for (int j = 0; j < temp.getSize(); j++)
+                {
+                    if (temp.getOrders()[j].getTimeDelivered() != 0)
+                    {
+                        if (4 < max) max = 4;
+                    }
+                    else if (temp.getOrders()[j].getTimeFinishedCooking() != 0)
+                    {
+                        if (3 < max) max = 3;
+                    }
+                    else if (temp.getOrders()[j].getTimeStartedCooking() != 0)
+                    {
+                        if (2 < max) max = 2;
+                    }
+                    else
+                    {
+                        max = 1;
+                    }
+                }
+                if (max == 1)
+                {
+                    buttons[i].setBackgroundColor(ProcessColor.ORDERED);
+                }
+                else if (max == 2)
+                {
+                    buttons[i].setBackgroundColor(ProcessColor.COOKING);
+                }
+                else if (max == 3)
+                {
+                    buttons[i].setBackgroundColor(ProcessColor.COOKED);
+                }
+                else
+                {
+                    buttons[i].setBackgroundColor(ProcessColor.DELIVERED);
+                }
+            }
+        }
     }
 
     /**
