@@ -58,6 +58,22 @@ public class ChairScreen
         {
             tv[i] = new TextView(this);
             tv[i].setText((i + 1) + " " + chair.getOrders()[i].getName());
+            if (chair.getOrders()[i].getTimeDelivered() != 0)
+            {
+                tv[i].setTextColor(ProcessColor.DELIVERED);
+            }
+            else if (chair.getOrders()[i].getTimeFinishedCooking() != 0)
+            {
+                tv[i].setTextColor(ProcessColor.COOKED);
+            }
+            else if (chair.getOrders()[i].getTimeStartedCooking() != 0)
+            {
+                tv[i].setTextColor(ProcessColor.COOKING);
+            }
+            else
+            {
+                tv[i].setTextColor(ProcessColor.ORDERED);
+            }
             foodList.addView(tv[i]);
         }
 
@@ -86,11 +102,12 @@ public class ChairScreen
 
         setContentView(R.layout.chairscreen);
         foodList = (LinearLayout)this.findViewById(R.id.foodList);
-        TextView[] tv = new TextView[10];
+        TextView[] tv = new TextView[chair.getSize()];
         for (int i = 0; i < chair.getSize(); i++)
         {
             tv[i] = new TextView(this);
             tv[i].setText((i + 1) + " " + chair.getOrders()[i].getName());
+            tv[i].setTextColor(ProcessColor.ORDERED);
             foodList.addView(tv[i]);
         }
         foodSpinner.setAdapter(adapter);
