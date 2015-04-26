@@ -3,7 +3,8 @@ package cs2114.restaurantmanager;
 import student.TestCase;
 
 /**
- *  A suite of test methods to test the behavior of the Bill class.
+ *  A suite of test methods to test the behavior of the Bill class for the
+ *  FoodItem class.
  *
  *  @author Samuel Hentschel (samh95)
  *  @version Mar 26, 2015
@@ -51,9 +52,7 @@ public class GenericBillTest
      */
     public void testSubtotalAndGetSubtotal()
     {
-        assertEquals(0, bill.getSubtotal(), 0.001);
         assertEquals(10.0, bill.subtotal(), 0.001);
-        assertEquals(10.0, bill.getSubtotal(), 0.001);
     }
 
     /**
@@ -61,9 +60,7 @@ public class GenericBillTest
      */
     public void testTotalAndGetTotal()
     {
-        assertEquals(0, bill.getTotal(), 0.001);
         assertEquals(11.13, bill.total(), 0.001);
-        assertEquals(11.13, bill.getTotal(), 0.001);
     }
 
     /**

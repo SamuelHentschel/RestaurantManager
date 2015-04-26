@@ -12,8 +12,6 @@ class Bill
     private FoodItem[] orders;
     private final static double localTax = 0.06;
     private final static double stateTax = 0.053;
-    private double subtotal = 0;
-    private double total = 0;
 
     //Constructors
     /**
@@ -38,9 +36,8 @@ class Bill
         double sum = 0;
         for (FoodItem item: orders)
         {
-            sum = sum + item.getCost();
+            if (item != null) sum = sum + item.getCost();
         }
-        subtotal = sum;
         return sum;
     }
 
@@ -52,8 +49,8 @@ class Bill
     public double total()
     {
         double sum  = subtotal();
-        sum = sum + (sum * (stateTax + localTax));
-        total = sum;
+        sum = sum * (1 + (stateTax + localTax));
+        sum = (double)Math.round(sum * 100) / 100;
         return sum;
     }
 
@@ -67,33 +64,17 @@ class Bill
         return orders;
     }
 
-    /**
-     * Gets the cost of just the food items consumed.
-     *
-     * @return      Returns the subtotal of the Bill.
-     */
-    public double getSubtotal()
-    {
-        return subtotal;
-    }
-
-    /**
-     * Gets the cost of all FoodItems consumed with tax included.
-     *
-     * @return      Returns the total of the Bill.
-     */
-    public double getTotal()
-    {
-        return total;
-    }
-
     public String toString()
     {
         String str = "              BILL\n"
             + "//////////------------///////////\n";
         for(FoodItem item: orders)
         {
-            str = str + item.getName() + "\n\t" + String.format("%.2f", item.getCost()) + "\n";
+            if (item != null)
+            {
+            str = str + item.getName() + "\n\t" + String.format("%.2f",
+                item.getCost()) + "\n";
+            }
         }
         str = str + "----------------------------------\n"
             + "         SUBTOTAL\t" + String.format("%.2f", subtotal()) + "\n"

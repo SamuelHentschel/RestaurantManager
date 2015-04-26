@@ -16,6 +16,6 @@ public class Sprite extends FoodItem
         super();
         name = "Sprite";
         ingredients = "N/A";
-        cost = 1.50;
+        cost = 1.49;
     }
 }
