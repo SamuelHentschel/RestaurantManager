@@ -42,8 +42,21 @@ class Chair
      */
     public void add(FoodItem item)
     {
-        orders[current] = item;
-        current++;
+        if (current < orders.length)
+        {
+            orders[current] = item;
+            current++;
+        }
+        else
+        {
+            FoodItem[] temp = new FoodItem[orders.length * 2];
+            for (int count = 0; count < orders.length; count++)
+            {
+                temp[count] = orders[count];
+            }
+            orders = temp;
+            add(item);
+        }
         notifyObservers();
     }
 
