@@ -76,15 +76,15 @@ extends Screen
                         {
                             for (int k = 0; k < tempChair.getSize(); k++)
                             {
-                                if (tempChair.getOrders()[j].getTimeDelivered() != 0)
+                                if (tempChair.getOrders()[k].getTimeDelivered() != 0)
                                 {
                                     if (4 < maxOrder) maxOrder = 4;
                                 }
-                                else if (tempChair.getOrders()[j].getTimeFinishedCooking() != 0)
+                                else if (tempChair.getOrders()[k].getTimeFinishedCooking() != 0)
                                 {
                                     if (3 < maxOrder) maxOrder = 3;
                                 }
-                                else if (tempChair.getOrders()[j].getTimeStartedCooking() != 0)
+                                else if (tempChair.getOrders()[k].getTimeStartedCooking() != 0)
                                 {
                                     if (2 < maxOrder) maxOrder = 2;
                                 }
