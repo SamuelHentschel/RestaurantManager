@@ -34,7 +34,7 @@ class Table
     }
 
     /**
-     * Creates a new Table object with the default number of Chairs (4).
+     * Creates a new Table object with the default number of Chairs (6).
      *
      * @param tableNum   The number of the specific table.
      */
