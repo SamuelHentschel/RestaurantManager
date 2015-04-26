@@ -13,7 +13,8 @@ public class TableScreen
     extends Screen
 {
     private Restaurant restaurant;
-    private int table;
+    private int tableNumber;
+    private Table table;
 
     /**
      * Initializes restaurant as the current array of tables.
@@ -21,10 +22,11 @@ public class TableScreen
      * @param rest      The restaurant object being used by the application.
      * @param tableNum  The number of the current table.
      */
-    public void initialize(Restaurant rest, int tableNum)
+    public void initialize(Restaurant rest, int tNum)
     {
         restaurant = rest;
-        table = tableNum;
+        tableNumber = tNum;
+        table = new Table(tableNumber-1);
     }
 
     /**
@@ -32,7 +34,7 @@ public class TableScreen
      */
     public void chair1Clicked()
     {
-        presentScreen(ChairScreen.class, restaurant, table, 1);
+        presentScreen(ChairScreen.class, restaurant, tableNumber, 1);
         finish();
     }
 
@@ -41,7 +43,7 @@ public class TableScreen
      */
     public void chair2Clicked()
     {
-        presentScreen(ChairScreen.class, restaurant, table, 2);
+        presentScreen(ChairScreen.class, restaurant, tableNumber, 2);
         finish();
     }
 
@@ -50,7 +52,7 @@ public class TableScreen
      */
     public void chair3Clicked()
     {
-        presentScreen(ChairScreen.class, restaurant, table, 3);
+        presentScreen(ChairScreen.class, restaurant, tableNumber, 3);
         finish();
     }
 
@@ -59,7 +61,7 @@ public class TableScreen
      */
     public void chair4Clicked()
     {
-        presentScreen(ChairScreen.class, restaurant, table, 4);
+        presentScreen(ChairScreen.class, restaurant, tableNumber, 4);
         finish();
     }
 
@@ -68,7 +70,7 @@ public class TableScreen
      */
     public void chair5Clicked()
     {
-        presentScreen(ChairScreen.class, restaurant, table, 5);
+        presentScreen(ChairScreen.class, restaurant, tableNumber, 5);
         finish();
     }
 
@@ -77,7 +79,7 @@ public class TableScreen
      */
     public void chair6Clicked()
     {
-        presentScreen(ChairScreen.class, restaurant, table, 6);
+        presentScreen(ChairScreen.class, restaurant, tableNumber, 6);
         finish();
     }
 

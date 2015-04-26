@@ -36,6 +36,7 @@ public class MainScreen
     public void initialize(Restaurant rest)
     {
         restaurant = rest;
+        managersData.setEnabled(false);  //Until data can be put to csv
     }
 
     /**
