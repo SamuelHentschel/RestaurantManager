@@ -14,7 +14,9 @@ class Table
     private int numChairs;
     private Chair[] chairs;
     private Bill[] bills;
+    private int current;
     private long timePaid;
+    private long timeBussed;
 
     //Constructors
     /**
@@ -31,6 +33,8 @@ class Table
         this.chairs = new Chair[chairs];
         bills = new Bill[chairs];
         timePaid = 0;
+        current =  0;
+        timeBussed = 0;
     }
 
     /**
@@ -75,6 +79,26 @@ class Table
     }
 
     /**
+     * Adds a Bill to the Bill array.
+     *
+     * @return  Returns the bill added to the array.
+     */
+    public Bill add(Bill bill)
+    {
+        bills[current] = bill;
+        current++;
+        return bill;
+    }
+
+    /**
+     * Removes the specified Bill from the array.
+     */
+    public void remove(int b)
+    {
+        bills[b] = null;
+    }
+
+    /**
      * Gets the number of the table.
      *
      * @return      Returns the table number.
@@ -110,5 +134,21 @@ class Table
     public long getTimePaid()
     {
         return timePaid;
+    }
+
+    /**
+     * Sets the time the Table was bussed.
+     */
+    public void setTimeBussed()
+    {
+        timeBussed = System.currentTimeMillis();
+    }
+
+    /**
+     * Gets the time the Table was bussed.
+     */
+    public long getTimeBussed()
+    {
+        return timeBussed;
     }
 }

@@ -84,13 +84,13 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/clearTable"
+        android:id="@+id/busButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/linearLayout1"
         android:layout_below="@+id/linearLayout1"
         android:layout_marginTop="28dp"
-        android:text="Clear" />
+        android:text="Bus" />
 
     <TextView
         android:id="@+id/tableNum"

@@ -30,18 +30,18 @@
         android:id="@+id/addFood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/clearChair"
+        android:layout_above="@+id/deliveredButton"
         android:layout_alignLeft="@+id/chairToTable"
         android:text="Add Food" />
 
     <Button
-        android:id="@+id/clearChair"
+        android:id="@+id/deliveredButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/addFood"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="39dp"
-        android:text="Clear" />
+        android:text="Delivered" />
 
     <Spinner
         android:id="@+id/foodSpinner"
