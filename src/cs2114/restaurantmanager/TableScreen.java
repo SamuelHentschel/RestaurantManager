@@ -25,6 +25,7 @@ public class TableScreen
     private Button chair5;
     private Button chair6;
     private Button busButton;
+    private Button showBill;
 
     /**
      * Initializes restaurant as the current array of tables.
@@ -48,6 +49,33 @@ public class TableScreen
         if (table.getTimePaid() == 0)
         {
             busButton.setEnabled(false);
+            int delNum = 0;
+            int tot = 0;
+            for (Chair chair: table.getChairs())
+            {
+                if (chair != null)
+                {
+                    for (FoodItem order: chair.getOrders())
+                    {
+                        if (order != null)
+                        {
+                            tot++;
+                            if (order.getTimeDelivered() != 0)
+                            {
+                                delNum++;
+                            }
+                        }
+                    }
+                }
+            }
+            if (tot == delNum)
+            {
+                showBill.setEnabled(true);
+            }
+            else
+            {
+                showBill.setEnabled(false);
+            }
         }
         else
         {
