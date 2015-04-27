@@ -12,8 +12,15 @@ class Bill
     private FoodItem[] orders;
     private final static double localTax = 0.06;
     private final static double stateTax = 0.053;
+    private int current;
 
     //Constructors
+    public Bill()
+    {
+        orders = new FoodItem[10];
+        current = 0;
+    }
+
     /**
      * Creates a new Bill object that holds all the data about the financial
      * aspect of the meal.
@@ -24,6 +31,7 @@ class Bill
     public Bill(FoodItem[] items)
     {
         orders = items;
+        current = items.length;
     }
 
     /**
@@ -64,6 +72,30 @@ class Bill
         return orders;
     }
 
+    /**
+     * Add more orders (typically from other chair) to this bill
+     * @param other items to be added
+     */
+    public void addToBill(FoodItem other)
+    {
+
+        if (current < orders.length)
+        {
+            orders[current] = other;
+            current++;
+        }
+        else
+        {
+            FoodItem[] temp = new FoodItem[orders.length * 2];
+            for (int count = 0; count < orders.length; count++)
+            {
+                temp[count] = orders[count];
+            }
+            orders = temp;
+            addToBill(other);
+        }
+    }
+
     public String toString()
     {
         String str = "              BILL\n"
@@ -83,4 +115,5 @@ class Bill
             + "----------------------------------\n";
         return str;
     }
+
 }

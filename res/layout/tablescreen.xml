@@ -77,22 +77,10 @@
         android:orientation="vertical" >
 
         <Button
-            android:id="@+id/bill1"
+            android:id="@+id/showBill"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bill 1" />
-
-        <Button
-            android:id="@+id/bill2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bill 2" />
-
-        <Button
-            android:id="@+id/bill3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bill 3" />
+            android:text="Bill" />
     </LinearLayout>
 
     <Button

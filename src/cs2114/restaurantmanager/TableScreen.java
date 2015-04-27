@@ -153,23 +153,12 @@ public class TableScreen
         finish();
     }
 
-    public void bill1Clicked()
+    public void showBillClicked()
     {
-        presentScreen(BillScreen.class, restaurant);
+        presentScreen(BillScreen.class, restaurant, tableNumber);
         finish();
     }
 
-    public void bill2Clicked()
-    {
-        presentScreen(BillScreen.class, restaurant);
-        finish();
-    }
-
-    public void bill3Clicked()
-    {
-        presentScreen(BillScreen.class, restaurant);
-        finish();
-    }
 
     public void tableToServerClicked()
     {

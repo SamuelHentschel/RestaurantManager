@@ -17,7 +17,7 @@
         android:text="Chair" />
 
     <TextView
-        android:id="@+id/billView"
+        android:id="@+id/billForTable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/chairToTable"
@@ -27,39 +27,28 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ScrollView
-        android:id="@+id/foodList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/subtotalView"
         android:layout_alignLeft="@+id/billToTable"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/billToTable" >
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/billView"
             android:layout_width="match_parent"
-            android:layout_height="216dp"
-            android:orientation="vertical" >
-        </LinearLayout>
+            android:layout_height="304dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
     </ScrollView>
 
-    <TextView
-        android:id="@+id/subtotalView"
+    <Button
+        android:id="@+id/paidBill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/foodList"
-        android:layout_marginBottom="67dp"
-        android:text="subtotal"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/totalView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/subtotalView"
-        android:layout_alignTop="@+id/subtotalView"
-        android:layout_marginTop="30dp"
-        android:text="total"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="Paid" />
 
 </RelativeLayout>
