@@ -70,6 +70,8 @@ public class CookerScreen
             int chair = Integer.parseInt(str.substring(2, 4).trim());
             int order = Integer.parseInt(str.substring(4, 6).trim());
             restaurant.getTables()[table].getChairs()[chair].getOrders()[order].setTimeStartedCooking();
+
+            changeList();
         }
     }
 
@@ -82,6 +84,8 @@ public class CookerScreen
             int chair = Integer.parseInt(str.substring(2, 4).trim());
             int order = Integer.parseInt(str.substring(4, 6).trim());
             restaurant.getTables()[table].getChairs()[chair].getOrders()[order].setTimeFinishedCooking();
+
+            changeList();
         }
     }
 
@@ -91,8 +95,9 @@ public class CookerScreen
         finish();
     }
 
-    public void changeWasObserved(FoodItem ord)
+    public void changeList()
     {
+
         setContentView(R.layout.cookerscreen);
         todo = (LinearLayout)this.findViewById(R.id.todo);
         inprocess = (LinearLayout)this.findViewById(R.id.inprocess);
@@ -120,7 +125,8 @@ public class CookerScreen
                                 inprocessData.enque(new TextView(this));
                                 inprocessData.get(inprocessData.size()-1).setText(table.number() + " " +
                                     chair.number() + " " + i + " " + chair.getOrders()[i].getName());
-                                inprocess.addView(inprocessData.get(inprocessData.size()-1));                            }
+                                inprocess.addView(inprocessData.get(inprocessData.size()-1));
+                            }
                         }
                     }
                 }
