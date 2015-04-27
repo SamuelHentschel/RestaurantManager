@@ -98,21 +98,21 @@ class Bill
 
     public String toString()
     {
-        String str = "              BILL\n"
-            + "//////////------------///////////\n";
+        String str = "                            BILL\n"
+            + "////////-------------------------------------/////////\n";
         for(FoodItem item: orders)
         {
             if (item != null)
             {
-            str = str + item.getName() + "\n\t" + String.format("%.2f",
+            str = str + item.getName() + "\n\t\t" + String.format("%.2f",
                 item.getCost()) + "\n";
             }
         }
-        str = str + "----------------------------------\n"
-            + "         SUBTOTAL\t" + String.format("%.2f", subtotal()) + "\n"
-            + "----------------------------------\n"
-            + "         TOTAL\t" + String.format("%.2f", total()) + "\n"
-            + "----------------------------------\n";
+        str = str + "----------------------------------------------------------\n"
+            + "----------------------------------------------------------\n"
+            + "         SUBTOTAL:\t\t" + String.format("%4.2f", subtotal()) + "\n"
+            + "                 TOTAL:\t\t" + String.format("%.2f", total()) + "\n"
+            + "----------------------------------------------------------\n";
         return str;
     }
 
