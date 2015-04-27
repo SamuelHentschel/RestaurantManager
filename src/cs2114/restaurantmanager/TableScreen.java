@@ -97,41 +97,46 @@ public class TableScreen
             }
             else
             {
-                int max = 4;
+                int max = 0;
                 for (int j = 0; j < temp.getSize(); j++)
                 {
                     if (temp.getOrders()[j].getTimeDelivered() != 0)
                     {
-                        if (4 < max) max = 4;
+                        if (1 > max) max = 1;
                     }
                     else if (temp.getOrders()[j].getTimeFinishedCooking() != 0)
                     {
-                        if (3 < max) max = 3;
+                        if (4 > max) max = 4;
                     }
                     else if (temp.getOrders()[j].getTimeStartedCooking() != 0)
                     {
-                        if (2 < max) max = 2;
+                        if (3 > max) max = 3;
                     }
                     else
                     {
-                        max = 1;
+                        if (2 > max) max = 2;
                     }
                 }
+
                 if (max == 1)
                 {
-                    buttons[i].setBackgroundColor(ProcessColor.ORDERED);
+                    buttons[i].setBackgroundColor(ProcessColor.DELIVERED);
                 }
                 else if (max == 2)
                 {
-                    buttons[i].setBackgroundColor(ProcessColor.COOKING);
+                    buttons[i].setBackgroundColor(ProcessColor.ORDERED);
                 }
                 else if (max == 3)
+                {
+                    buttons[i].setBackgroundColor(ProcessColor.COOKING);
+                }
+                else if (max == 4)
                 {
                     buttons[i].setBackgroundColor(ProcessColor.COOKED);
                 }
                 else
                 {
-                    buttons[i].setBackgroundColor(ProcessColor.DELIVERED);
+                    buttons[i].setBackgroundColor(ProcessColor.SEATED);
                 }
             }
         }
