@@ -45,14 +45,14 @@ public class CookerScreen
                             {
                                 todoData.enque(new TextView(this));
                                 todoData.get(todoData.size()-1).setText(table.number() + " " +
-                                    chair.number() + " " + i + " " + chair.getOrders()[i].getName());
+                                    chair.number() + " " + i + " \n" + chair.getOrders()[i].getName());
                                 todo.addView(todoData.get(todoData.size()-1));
                             }
                             else if (chair.getOrders()[i].getTimeFinishedCooking() == 0)
                             {
                                 inprocessData.enque(new TextView(this));
                                 inprocessData.get(inprocessData.size()-1).setText(table.number() + " " +
-                                    chair.number() + " " + i + " " + chair.getOrders()[i].getName());
+                                    chair.number() + " " + i + " \n" + chair.getOrders()[i].getName());
                                 inprocess.addView(inprocessData.get(inprocessData.size()-1));                            }
                         }
                     }
@@ -117,14 +117,14 @@ public class CookerScreen
                             {
                                 todoData.enque(new TextView(this));
                                 todoData.get(todoData.size()-1).setText(table.number() + " " +
-                                    chair.number() + " " + i + " " + chair.getOrders()[i].getName());
+                                    chair.number() + " " + i + " \n" + chair.getOrders()[i].getName());
                                 todo.addView(todoData.get(todoData.size()-1));
                             }
                             else if (chair.getOrders()[i].getTimeFinishedCooking() == 0)
                             {
                                 inprocessData.enque(new TextView(this));
                                 inprocessData.get(inprocessData.size()-1).setText(table.number() + " " +
-                                    chair.number() + " " + i + " " + chair.getOrders()[i].getName());
+                                    chair.number() + " " + i + " \n" + chair.getOrders()[i].getName());
                                 inprocess.addView(inprocessData.get(inprocessData.size()-1));
                             }
                         }
