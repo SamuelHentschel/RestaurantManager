@@ -9,10 +9,12 @@ package cs2114.restaurantmanager;
 class Table
 {
     //Fields
+    private long timeSeated;
     private int table;
     private int numChairs;
     private Chair[] chairs;
     private Bill[] bills;
+    private long timePaid;
 
     //Constructors
     /**
@@ -23,10 +25,12 @@ class Table
      */
     public Table(int tableNum, int chairs)
     {
+        timeSeated = System.currentTimeMillis();
         table = tableNum;
         numChairs = chairs;
         this.chairs = new Chair[chairs];
         bills = new Bill[chairs];
+        timePaid = 0;
     }
 
     /**
@@ -78,5 +82,33 @@ class Table
     public int number()
     {
         return table;
+    }
+
+    /**
+     * Returns the value of the time seated.
+     *
+     * @return  Returns the time the table was seated.
+     */
+    public long getTimeSeated()
+    {
+        return timeSeated;
+    }
+
+    /**
+     * Sets the time all checks were paid for.
+     */
+    public void setTimePaid()
+    {
+        timePaid = System.currentTimeMillis();
+    }
+
+    /**
+     * Returns the value of the time paid.
+     *
+     * @return      Returns the time all bills were paid.
+     */
+    public long getTimePaid()
+    {
+        return timePaid;
     }
 }
