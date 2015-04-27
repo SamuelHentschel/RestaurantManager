@@ -37,7 +37,7 @@ public class ChairTest
     //SetUp
     public void setUp()
     {
-        chair = new Chair();
+        chair = new Chair(1);
         item1 = new FoodItem();
         item2 = new FoodItem();
         item3 = new FoodItem();

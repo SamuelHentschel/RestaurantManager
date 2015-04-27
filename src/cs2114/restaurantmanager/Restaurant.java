@@ -1,12 +1,14 @@
 package cs2114.restaurantmanager;
 
+import sofia.util.Observable;
+
 /**
  *  Contains the array of tables being used for the application.
  *
  *  @author Samuel Hentschel (samh95)
  *  @version 2015.04.24
  */
-class Restaurant
+class Restaurant extends Observable
 {
     private Table[] tables;
 
