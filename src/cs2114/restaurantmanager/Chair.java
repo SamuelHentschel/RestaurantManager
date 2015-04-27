@@ -14,15 +14,22 @@ class Chair
     //Fields
     private FoodItem[] orders;
     private int current;
+    private int chair;
 
     //Constructors
     /**
      * Creates a new Chair with the default number of 10 orders.
      */
-    public Chair()
+    public Chair(int cNum)
     {
         orders = new FoodItem[10];
         current = 0;
+        chair = cNum;
+    }
+
+    public int number()
+    {
+        return chair;
     }
 
     /**

@@ -34,7 +34,7 @@ public class ChairScreen
 
         if (restaurant.getTables()[tableNumber-1].getChairs()[chairNumber-1] == null)
         {
-            restaurant.getTables()[tableNumber-1].getChairs()[chairNumber-1] = new Chair();
+            restaurant.getTables()[tableNumber-1].getChairs()[chairNumber-1] = new Chair(chairNumber-1);
         }
 
         chair = restaurant.getTables()[tableNumber-1].getChairs()[chairNumber-1];
@@ -106,7 +106,6 @@ public class ChairScreen
 
     public void changeWasObserved(Chair other)
     {
-
         setContentView(R.layout.chairscreen);
         foodList = (LinearLayout)this.findViewById(R.id.foodList);
         TextView[] tv = new TextView[chair.getSize()];

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/toDoList"
         android:layout_alignParentRight="true"
-        android:text="Completed"
+        android:text="In Process"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
@@ -36,44 +36,57 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ScrollView
-        android:id="@+id/foodList"
+        android:id="@+id/todoScrollView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/clearToDo"
+        android:layout_above="@+id/cookButton"
         android:layout_alignLeft="@+id/toDoList"
         android:layout_alignRight="@+id/toDoList"
         android:layout_below="@+id/toDoList" >
 
         <LinearLayout
+            android:id="@+id/todo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical" >
+
         </LinearLayout>
     </ScrollView>
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/inprocessScrollView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/foodList"
+        android:layout_alignBottom="@+id/todoScrollView"
         android:layout_alignLeft="@+id/completeList"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/foodList" >
+        android:layout_alignRight="@+id/completeList"
+        android:layout_alignTop="@+id/todoScrollView" >
 
         <LinearLayout
+            android:id="@+id/inprocess"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical" >
+
         </LinearLayout>
     </ScrollView>
 
     <Button
-        android:id="@+id/clearToDo"
+        android:id="@+id/cookButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="36dp"
-        android:text="Clear" />
+        android:layout_alignRight="@+id/todoScrollView"
+        android:layout_marginBottom="14dp"
+        android:text="Cook" />
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cookButton"
+        android:layout_alignBottom="@+id/cookButton"
+        android:layout_alignRight="@+id/inprocessScrollView"
+        android:text="Finish" />
 
 </RelativeLayout>

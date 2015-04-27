@@ -1,5 +1,7 @@
 package cs2114.restaurantmanager;
 
+import sofia.util.Observable;
+
 /**
  *  Creates a new FoodItem object which describes the methods and fields to be
  *  used by the subclasses of FoodItem.
@@ -7,7 +9,7 @@ package cs2114.restaurantmanager;
  *  @author Samuel Hentschel (samh95)
  *  @version Mar 25, 2015
  */
-class FoodItem
+class FoodItem extends Observable
 {
     //Fields
     /**
