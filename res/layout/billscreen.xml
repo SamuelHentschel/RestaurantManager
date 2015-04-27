@@ -16,19 +16,10 @@
         android:layout_alignParentTop="true"
         android:text="Chair" />
 
-    <TextView
-        android:id="@+id/billForTable"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/chairToTable"
-        android:layout_alignBottom="@+id/chairToTable"
-        android:layout_centerHorizontal="true"
-        android:text="Bill"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/paidBill"
         android:layout_alignLeft="@+id/billToTable"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/billToTable" >
