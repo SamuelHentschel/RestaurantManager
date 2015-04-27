@@ -12,6 +12,7 @@ public class BillScreen
 
     private Restaurant restaurant;
     private int tableNumber;
+    private int billNumber;
     private Bill billAll;
     private TextView billView;
 
@@ -44,6 +45,17 @@ public class BillScreen
     public void billToTableClicked()
     {
         presentScreen(TableScreen.class, restaurant, tableNumber);
+        finish();
+    }
+
+    public void paidBillClicked()
+    {
+        restaurant.getTables()[tableNumber-1].setTimePaid();
+        for (int i = 0; i < restaurant.getTables()[tableNumber-1].getNumChairs(); i++)
+        {
+            restaurant.getTables()[tableNumber-1].getChairs()[i] = null;
+        }
+        presentScreen(ServerScreen.class, restaurant);
         finish();
     }
 }

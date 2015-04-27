@@ -103,6 +103,18 @@ public class ChairScreen
         finish();
     }
 
+    public void deliveredButtonClicked()
+    {
+        for(int i = 0; i < restaurant.getTables()[tableNumber-1].getChairs()[chairNumber-1].getSize(); i++)
+        {
+            if (restaurant.getTables()[tableNumber-1].getChairs()[chairNumber-1].getOrders()[i].getTimeFinishedCooking() != 0)
+            {
+                restaurant.getTables()[tableNumber-1].getChairs()[chairNumber-1].getOrders()[i].setTimeDelivered();
+            }
+        }
+        changeWasObserved(chair);
+    }
+
 
     public void changeWasObserved(Chair other)
     {
@@ -113,7 +125,22 @@ public class ChairScreen
         {
             tv[i] = new TextView(this);
             tv[i].setText((i + 1) + " " + chair.getOrders()[i].getName());
-            tv[i].setTextColor(ProcessColor.ORDERED);
+            if (chair.getOrders()[i].getTimeDelivered() != 0)
+            {
+                tv[i].setTextColor(ProcessColor.DELIVERED);
+            }
+            else if (chair.getOrders()[i].getTimeFinishedCooking() != 0)
+            {
+                tv[i].setTextColor(ProcessColor.COOKED);
+            }
+            else if (chair.getOrders()[i].getTimeStartedCooking() != 0)
+            {
+                tv[i].setTextColor(ProcessColor.COOKING);
+            }
+            else
+            {
+                tv[i].setTextColor(ProcessColor.ORDERED);
+            }
             foodList.addView(tv[i]);
         }
         foodSpinner.setAdapter(adapter);
