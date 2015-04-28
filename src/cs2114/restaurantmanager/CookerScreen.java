@@ -8,6 +8,7 @@ import sofia.app.Screen;
  *  Implements the controller for the CookerScreen.
  *
  *  @author Samuel Hentschel (samh95)
+ *  @author Zheng Wang (zhengw8)
  *  @version 2015.04.24
  */
 public class CookerScreen

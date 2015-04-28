@@ -6,6 +6,7 @@ package cs2114.restaurantmanager;
  *  and the total cost with Virginia State tax.
  *
  *  @author Samuel Hentschel (samh95)
+ *  @author Zheng Wang (zhengw8)
  *  @version 2015.04.27
  */
 class Bill

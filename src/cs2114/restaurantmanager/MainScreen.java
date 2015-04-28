@@ -6,7 +6,7 @@ import android.widget.*;
 /**
  *  Creates the Main Screen used by the application when it first begins.
  *
- *  @author Zheng Want (zhengw8)
+ *  @author Zheng Wang (zhengw8)
  *  @author Samuel Hentschel (samh95)
  *  @version 2015.04.24
  */

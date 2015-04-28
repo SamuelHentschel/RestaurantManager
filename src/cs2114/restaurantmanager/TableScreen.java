@@ -7,6 +7,7 @@ import sofia.app.Screen;
  *  The controller for the table screen which shows all the tables that are in
  *  the restaurant.
  *
+ *  @author Zheng Wang (zhengw8)
  *  @author Samuel Hentschel (samh95)
  *  @version 2015.04.24
  */

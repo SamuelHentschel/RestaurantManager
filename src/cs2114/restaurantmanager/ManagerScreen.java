@@ -8,6 +8,7 @@ import sofia.app.Screen;
  *  Whereby it could retrieve data that had been recorded about precious
  *  business including time data and point of sales.
  *
+ *  @author Zheng Wang (zhengw8)
  *  @author Samuel Hentschel (samh95)
  *  @version 2015.04.27
  */
