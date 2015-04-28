@@ -34,9 +34,6 @@ public class CookerScreenTests
     public void setUp()
     {
         restaurant = new Restaurant();
-        restaurant.getTables()[0].getChairs()[0].add(hotdog);
-        restaurant.getTables()[0].getChairs()[0].add(hotdog);
-        restaurant.getTables()[0].getChairs()[0].add(hotdog);
     }
 
     // ----------------------------------------------------------

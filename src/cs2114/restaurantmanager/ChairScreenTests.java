@@ -15,6 +15,8 @@ public class ChairScreenTests
 {
 
     private Restaurant restaurant;
+    private Button chairToTable;
+    private Spinner foodSpinner;
 
     public ChairScreenTests()
     {
@@ -27,7 +29,10 @@ public class ChairScreenTests
         restaurant = new Restaurant();
     }
 
-    public oid
+    public void testChairToTable()
+    {
+        assertTrue(chairToTable.isClickable());
+    }
 
 
 
