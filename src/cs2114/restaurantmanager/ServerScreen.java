@@ -63,75 +63,64 @@ extends Screen
             else
             {
                 //Going through Chairs
-                int maxChair = 4;
-                int nullCount = 0;
+                int maxChair = 0;
+                boolean empty = false;
                 for (int j = 0; j < tempTable.getNumChairs(); j++)
                 {
                     Chair tempChair = tempTable.getChairs()[j];
                     if (tempChair != null)
                     {
-                        int maxOrder = 4;
+                        int maxOrder = 0;
                         //Going through Orders of a Chair
                         if (tempChair.getSize() == 0)
                         {
-                            maxChair = 0;
+                            empty = true;
                         }
                         else
                         {
-                            if (tempChair.getSize() != 0)
+                            for (int k = 0; k < tempChair.getSize(); k++)
                             {
-                                for (int k = 0; k < tempChair.getSize(); k++)
+                                if (tempChair.getOrders()[k].getTimeDelivered() != 0)
                                 {
-                                    if (tempChair.getOrders()[k].getTimeDelivered() != 0)
-                                    {
-                                        if (4 < maxOrder) maxOrder = 4;
-                                    }
-                                    else if (tempChair.getOrders()[k].getTimeStartedCooking() == 0)
-                                    {
-                                        if (3 < maxOrder) maxOrder = 3;
-                                    }
-                                    else if (tempChair.getOrders()[k].getTimeFinishedCooking() == 0)
-                                    {
-                                        if (2 < maxOrder) maxOrder = 2;
-                                    }
-                                    else
-                                    {
-                                        maxOrder = 1;
-                                    }
+                                    if (1 > maxOrder) maxOrder = 1;
+                                }
+                                else if (tempChair.getOrders()[k].getTimeFinishedCooking() != 0)
+                                {
+                                    if (4 > maxOrder) maxOrder = 4;
+                                }
+                                else if (tempChair.getOrders()[k].getTimeStartedCooking() != 0)
+                                {
+                                    if (3 > maxOrder) maxOrder = 3;
+                                }
+                                else
+                                {
+                                    if (2 > maxOrder) maxOrder = 2;
                                 }
                             }
-                            if (maxOrder < maxChair) maxChair = maxOrder;
                         }
+                        if (maxOrder > maxChair) maxChair = maxOrder;
                     }
-                    else
-                    {
+                }
 
-                        nullCount++;
-                    }
-                }
-                if (nullCount == 6)
+                if (maxChair == 1 && !empty)
                 {
-                    buttons[i].setBackgroundColor(ProcessColor.SEATED);
+                    buttons[i].setBackgroundColor(ProcessColor.DELIVERED);
                 }
-                else if (maxChair == 1)
-                {
-                    buttons[i].setBackgroundColor(ProcessColor.COOKED);
-                }
-                else if (maxChair == 0)
-                {
-                    buttons[i].setBackgroundColor(ProcessColor.SEATED);
-                }
-                else if (maxChair == 2)
-                {
-                    buttons[i].setBackgroundColor(ProcessColor.COOKING);
-                }
-                else if (maxChair == 3)
+                else if (maxChair == 2 && !empty)
                 {
                     buttons[i].setBackgroundColor(ProcessColor.ORDERED);
                 }
+                else if (maxChair == 3 && !empty)
+                {
+                    buttons[i].setBackgroundColor(ProcessColor.COOKING);
+                }
+                else if (maxChair == 4)
+                {
+                    buttons[i].setBackgroundColor(ProcessColor.COOKED);
+                }
                 else
                 {
-                    buttons[i].setBackgroundColor(ProcessColor.DELIVERED);
+                    buttons[i].setBackgroundColor(ProcessColor.SEATED);
                 }
             }
         }
