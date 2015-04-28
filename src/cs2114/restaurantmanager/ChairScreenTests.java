@@ -18,6 +18,10 @@ public class ChairScreenTests
     private Button chairToTable;
     private Spinner foodSpinner;
 
+    // ----------------------------------------------------------
+    /**
+     * Create a new ChairScreenTests object.
+     */
     public ChairScreenTests()
     {
         super(ChairScreen.class);
@@ -29,6 +33,10 @@ public class ChairScreenTests
         restaurant = new Restaurant();
     }
 
+    // ----------------------------------------------------------
+    /**
+     * Test Method for
+     */
     public void testChairToTable()
     {
         assertTrue(chairToTable.isClickable());
