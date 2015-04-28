@@ -26,6 +26,7 @@ public class TableScreenTest
     private static Restaurant rest;
     private HotDog hotdog;
     private Button showBill;
+    private Button busButton;
 
     /**
      * Initializes the restaurant field
@@ -46,9 +47,7 @@ public class TableScreenTest
      */
     public void testTableToServer()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(tableToServer);
-        assertNotNull(rest.getTables()[0]);
+        assertTrue(tableToServer.isClickable());
     }
     /**
      * Test the function of the chair1 button and what the color
@@ -266,7 +265,13 @@ public class TableScreenTest
      */
     public void testShowBill()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(showBill);
+        assertTrue(showBill.isClickable());
+    }
+    /**
+     * Test the functionality of the busButton button
+     */
+    public void testBusButton()
+    {
+        assertTrue(busButton.isClickable());
     }
 }

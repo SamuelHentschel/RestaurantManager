@@ -51,168 +51,147 @@ public class ServerScreenTest
      */
     public void testServerToMenu()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(serverToMenu);
+        assertTrue(serverToMenu.isClickable());
     }
     /**
      * Tests the function of the table1 button
      */
     public void testTable1()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table1);
+        assertTrue(table1.isClickable());
     }
     /**
      * Tests the function of the table2 button
      */
     public void testTable2()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table2);
+        assertTrue(table2.isClickable());
     }
     /**
      * Tests the function of the table3 button
      */
     public void testTable3()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table3);
+        assertTrue(table3.isClickable());
     }
     /**
      * Tests the function of the table4 button
      */
     public void testTable4()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table4);
+        assertTrue(table4.isClickable());
     }
     /**
      * Tests the function of the table5 button
      */
     public void testTable5()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table5);
+        assertTrue(table5.isClickable());
     }
     /**
      * Tests the function of the table6 button
      */
     public void testTable6()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table6);
+        assertTrue(table6.isClickable());
     }
     /**
      * Tests the function of the table7 button
      */
     public void testTable7()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table7);
+        assertTrue(table7.isClickable());
     }
     /**
      * Tests the function of the table8 button
      */
     public void testTable8()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table8);
+        assertTrue(table8.isClickable());
     }
     /**
      * Tests the function of the table9 button
      */
     public void testTable9()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table9);
+        assertTrue(table9.isClickable());
     }
     /**
      * Tests the function of the table10 button
      */
     public void testTable10()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table10);
+        assertTrue(table10.isClickable());
     }
     /**
      * Tests the function of the table11 button
      */
     public void testTable11()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table11);
+        assertTrue(table11.isClickable());
     }
     /**
      * Tests the function of the table12 button
      */
     public void testTable12()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table12);
+        assertTrue(table12.isClickable());
     }
     /**
      * Tests the function of the table13 button
      */
     public void testTable13()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table13);
+        assertTrue(table13.isClickable());
     }
     /**
      * Tests the function of the table14 button
      */
     public void testTable14()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table14);
+        assertTrue(table14.isClickable());
     }
     /**
      * Tests the function of the table15 button
      */
     public void testTable15()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table15);
+        assertTrue(table15.isClickable());
     }
     /**
      * Tests the function of the table16 button
      */
     public void testTable16()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table16);
+        assertTrue(table16.isClickable());
     }
     /**
      * Tests the function of the table17 button
      */
     public void testTable17()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table17);
+        assertTrue(table17.isClickable());
     }
     /**
      * Tests the function of the table18 button
      */
     public void testTable18()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table18);
+        assertTrue(table18.isClickable());
     }
     /**
      * Tests the function of the table19 button
      */
     public void testTable19()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table19);
+        assertTrue(table19.isClickable());
     }
     /**
      * Tests the function of the table20 button
      */
     public void testTable20()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(table20);
+        assertTrue(table20.isClickable());
     }
 
 }

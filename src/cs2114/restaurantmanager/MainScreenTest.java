@@ -17,6 +17,8 @@ public class MainScreenTest
     private Restaurant restaurant;
     private Button serversTable;
     private Button cookersList;
+    private Button managersData;
+    private Button serverToMenu;
 
     /**
      * Creates the screen being tested
@@ -38,15 +40,20 @@ public class MainScreenTest
      */
     public void testServersTable()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(serversTable);
+        assertTrue(serversTable.isClickable());
     }
     /**
      * Tests the function of the cookersList button
      */
     public void testCookersList()
     {
-        prepareForUpcomingActivity(Intent.ACTION_VIEW);
-        click(cookersList);
+        assertTrue(cookersList.isClickable());
+    }
+    /**
+     * Tests the function of the managerData button
+     */
+    public void testManagerData()
+    {
+        assertFalse(managersData.isEnabled());
     }
 }
