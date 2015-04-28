@@ -7,7 +7,7 @@ import student.TestCase;
  *  FoodItem class.
  *
  *  @author Samuel Hentschel (samh95)
- *  @version Mar 26, 2015
+ *  @version 2015.03.26
  */
 public class GenericBillTest
     extends TestCase
@@ -30,6 +30,9 @@ public class GenericBillTest
     }
 
     //SetUp
+    /**
+     * Sets up the initial environment used in the test methods.
+     */
     public void setUp()
     {
         item1.name = "item1";

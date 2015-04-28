@@ -4,10 +4,9 @@ import sofia.app.Screen;
 import android.widget.*;
 
 /**
- *  Screen Class for Android application
- *  which initiate all shapes and GUI of the application
+ *  Creates the Main Screen used by the application when it first begins.
  *
- *  @author LegitMe
+ *  @author Zheng Wang (zhengw8)
  *  @author Samuel Hentschel (samh95)
  *  @version 2015.04.24
  */
@@ -15,8 +14,6 @@ public class MainScreen
     extends Screen
 {
     private Restaurant restaurant;
-    //private Button serversTable;
-    //private Button cookersList;
     private Button managersData;
 
     /**

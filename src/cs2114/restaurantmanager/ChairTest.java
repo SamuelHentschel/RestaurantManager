@@ -6,7 +6,7 @@ import student.TestCase;
  *  A suite of test methods to test the behavior of the Chair class.
  *
  *  @author Samuel Hentschel (samh95)
- *  @version Mar 26, 2015
+ *  @version 2014.04.27
  */
 public class ChairTest
     extends TestCase
@@ -35,6 +35,9 @@ public class ChairTest
     }
 
     //SetUp
+    /**
+     * Sets up the initial test conditions needed for all the test methods.
+     */
     public void setUp()
     {
         chair = new Chair(1);

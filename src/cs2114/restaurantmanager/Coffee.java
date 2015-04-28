@@ -1,4 +1,5 @@
 package cs2114.restaurantmanager;
+
 /**
  *  Coffee class that contains the menu item's
  *  specifications.

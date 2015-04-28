@@ -6,7 +6,7 @@ import student.TestCase;
  *  A suite of test methods to test the behavior of the Bill class.
  *
  *  @author Samuel Hentschel (samh95)
- *  @version Mar 26, 2015
+ *  @version 2015.03.26
  */
 public class FoodItemTest
     extends TestCase
@@ -24,6 +24,9 @@ public class FoodItemTest
     }
 
     //SetUp
+    /**
+     * Sets up the initial environment used in the test methods.
+     */
     public void setUp()
     {
         item = new FoodItem();

@@ -7,12 +7,11 @@ import sofia.graphics.Color;
  *  A suite of test methods to test the behavior of the ProcessColor class.
  *
  *  @author Samuel Hentschel (samh95)
- *  @version Mar 27, 2015
+ *  @version 2015.03.27
  */
 public class ProcessColorTest
     extends TestCase
 {
-    //Fields
     //Constructors
     /**
      * An empty constructor to reduce errors.
@@ -23,6 +22,9 @@ public class ProcessColorTest
     }
 
     //SetUp
+    /**
+     * Sets up the initial environment used by the test methods.
+     */
     public void setUp()
     {
         //Empty setup

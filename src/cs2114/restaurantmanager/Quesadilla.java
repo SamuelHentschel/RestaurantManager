@@ -1,4 +1,5 @@
 package cs2114.restaurantmanager;
+
 /**
  *  Quesadilla class that contains the menu item's
  *  specifications such as name, ingredients and

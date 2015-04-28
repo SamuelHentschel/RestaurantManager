@@ -1,4 +1,5 @@
 package cs2114.restaurantmanager;
+
 /**
  *  A Water class that contains the food item's specifications.
  *
@@ -7,7 +8,6 @@ package cs2114.restaurantmanager;
  */
 public class Water extends FoodItem
 {
-    // ----------------------------------------------------------
     /**
      * Create a new Water object.
      */

@@ -1,4 +1,5 @@
 package cs2114.restaurantmanager;
+
 /**
  *  Stir Fried beef class that contains the menu item's
  *  specifications.

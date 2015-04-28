@@ -6,7 +6,7 @@ import student.TestCase;
  *  A suite of test methods to test the behavior of the Table class.
  *
  *  @author Samuel Hentschel (samh95)
- *  @version Mar 27, 2015
+ *  @version 2015.03.27
  */
 public class TableTest
     extends TestCase
@@ -26,6 +26,9 @@ public class TableTest
     }
 
     //SetUp
+    /**
+     * Sets up the initial environment used by the test methods.
+     */
     public void setUp()
     {
         tableSetChairs = new Table(3);

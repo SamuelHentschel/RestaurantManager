@@ -1,4 +1,5 @@
 package cs2114.restaurantmanager;
+
 /**
  *  ZucchiniSquare class that contains the food item's specifications.
  *

@@ -1,12 +1,13 @@
 package cs2114.restaurantmanager;
 
-
 import sofia.util.*;
+
 /**
  *  Create a new Chair which holds the specific orders of a specific customer.
+ *  Uses a FoodItem array to hold the orders.
  *
  *  @author Samuel Hentschel (samh95)
- *  @version Mar 25, 2015
+ *  @version 2015.04.27
  */
 class Chair
     extends Observable
@@ -19,6 +20,8 @@ class Chair
     //Constructors
     /**
      * Creates a new Chair with the default number of 10 orders.
+     *
+     * @param cNum      The number of the current chair.
      */
     public Chair(int cNum)
     {
@@ -27,6 +30,11 @@ class Chair
         chair = cNum;
     }
 
+    /**
+     * Returns the number of the current chair.
+     *
+     * @return      Returns the current chair's number.
+     */
     public int number()
     {
         return chair;
