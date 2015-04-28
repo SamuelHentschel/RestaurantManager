@@ -1,4 +1,5 @@
 package cs2114.restaurantmanager;
+
 /**
  *  Creates a new Hamburger object that has the item's specifications
  *  such as name, ingredients, etc.
@@ -20,5 +21,4 @@ public class Hamburger extends FoodItem
             + "fries.";
         cost = 4.99;
     }
-
 }

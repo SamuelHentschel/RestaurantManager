@@ -7,7 +7,7 @@ import sofia.graphics.Color;
  *  it.  These will be used to color code the tables, chairs, and orders.
  *
  *  @author Samuel Hentschel (samh95)
- *  @version Mar 25, 2015
+ *  @version 2015.03.25
  */
 class ProcessColor
 {

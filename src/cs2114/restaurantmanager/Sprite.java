@@ -1,4 +1,5 @@
 package cs2114.restaurantmanager;
+
 /**
  *  A Sprite class that contains the food item's
  *  specifications.

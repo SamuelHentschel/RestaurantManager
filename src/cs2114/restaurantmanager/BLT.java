@@ -1,4 +1,5 @@
 package cs2114.restaurantmanager;
+
 /**
  *  Creates the BLT class that contains the menu item's
  *  specifications.

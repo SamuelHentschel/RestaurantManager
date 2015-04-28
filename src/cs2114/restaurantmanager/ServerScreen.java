@@ -48,10 +48,12 @@ extends Screen
             table7, table8, table9, table10, table11, table12, table13, table14,
             table15, table16, table17, table18, table19, table20};
 
+        //Checking and coloring a table with the correct ProcessColor
         //Going through Tables
         for (int i = 0; i < restaurant.getTables().length; i++)
         {
             Table tempTable = restaurant.getTables()[i];
+
             if (tempTable == null)
             {
                 buttons[i].setBackgroundColor(ProcessColor.CLEAR);
@@ -102,6 +104,8 @@ extends Screen
                     }
                 }
 
+                //Colors the button with the ProcessColor of the most important
+                //part of the process that table is in.
                 if (maxChair == 1 && !empty)
                 {
                     buttons[i].setBackgroundColor(ProcessColor.DELIVERED);

@@ -4,7 +4,7 @@ package cs2114.restaurantmanager;
  *  Creates a new Table which holds the Chairs and the specific Table time data.
  *
  *  @author Samuel Hentschel (samh95)
- *  @version Mar 25, 2015
+ *  @version 2015.03.25
  */
 class Table
 {
@@ -70,6 +70,7 @@ class Table
 
     /**
      * Gets the array used to hold the Bills being made for the table.
+     * Created for future use when splitting up Bills.
      *
      * @return      Returns the Bills for the table.
      */
@@ -80,8 +81,11 @@ class Table
 
     /**
      * Adds a Bill to the Bill array.
+     * Created for future use when splitting up Bills.
      *
-     * @return  Returns the bill added to the array.
+     * @param bill  The bill to be added to the Bill array.
+     *
+     * @return      Returns the bill added to the array.
      */
     public Bill add(Bill bill)
     {
@@ -92,6 +96,9 @@ class Table
 
     /**
      * Removes the specified Bill from the array.
+     * Created for future use when splitting up Bills.
+     *
+     * @param b     The inex of the Bill to be removed (set to null).
      */
     public void remove(int b)
     {
@@ -146,6 +153,8 @@ class Table
 
     /**
      * Gets the time the Table was bussed.
+     *
+     * @return      Returns the time the table was bussed.
      */
     public long getTimeBussed()
     {

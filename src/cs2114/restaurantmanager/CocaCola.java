@@ -1,4 +1,5 @@
 package cs2114.restaurantmanager;
+
 /**
  *  Creates a Coca Cola class that contains
  *  the menu item's specifications.

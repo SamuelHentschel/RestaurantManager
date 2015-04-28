@@ -7,7 +7,7 @@ import student.TestCase;
  *  subclasses of FoodItem.
  *
  *  @author Samuel Hentschel (samh95)
- *  @version Mar 26, 2015
+ *  @version 2015.04.26
  */
 public class BillTest
     extends TestCase

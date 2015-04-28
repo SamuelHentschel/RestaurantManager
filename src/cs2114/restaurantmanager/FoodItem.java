@@ -7,7 +7,7 @@ import sofia.util.Observable;
  *  used by the subclasses of FoodItem.
  *
  *  @author Samuel Hentschel (samh95)
- *  @version Mar 25, 2015
+ *  @version 2015.03.25
  */
 class FoodItem extends Observable
 {
@@ -169,6 +169,9 @@ class FoodItem extends Observable
         timeDelivered = System.currentTimeMillis();
     }
 
+    /**
+     * Returns the FoodItem in string form.
+     */
     public String toString()
     {
         return name + "\t" + String.format("%.2f", cost) + "\n" + "Ingredients: " + ingredients + "\n"

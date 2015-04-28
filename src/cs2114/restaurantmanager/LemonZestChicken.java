@@ -1,4 +1,5 @@
 package cs2114.restaurantmanager;
+
 /**
  *  Lemon Zest Chicken class that contains the menu item's
  *  specifications.

@@ -1,10 +1,12 @@
 package cs2114.restaurantmanager;
 
 /**
- *  Creates a bill for the customer at the restaurant.
+ *  Creates a Bill object to be used in billing the Table.
+ *  Holds an array of FoodItems ordered by the Table and calculates the subtotal
+ *  and the total cost with Virginia State tax.
  *
  *  @author Samuel Hentschel (samh95)
- *  @version Mar 25, 2015
+ *  @version 2015.04.27
  */
 class Bill
 {
@@ -15,6 +17,11 @@ class Bill
     private int current;
 
     //Constructors
+    /**
+     * Creates a new Bill object.
+     * Initializes a new FoodItem array that can hold 10 items and the variable
+     * that holds the size of the array.
+     */
     public Bill()
     {
         orders = new FoodItem[10];
@@ -78,7 +85,6 @@ class Bill
      */
     public void addToBill(FoodItem other)
     {
-
         if (current < orders.length)
         {
             orders[current] = other;
@@ -96,6 +102,10 @@ class Bill
         }
     }
 
+    /**
+     * Creates a string representation of the Bill.
+     * This is used in the BillScreen when providing a bill for the customers.
+     */
     public String toString()
     {
         String str = "                            BILL\n"
@@ -115,5 +125,4 @@ class Bill
             + "----------------------------------------------------------\n";
         return str;
     }
-
 }

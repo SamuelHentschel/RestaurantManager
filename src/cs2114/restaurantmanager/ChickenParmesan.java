@@ -1,4 +1,5 @@
 package cs2114.restaurantmanager;
+
 /**
  *  Creates a Chicken Parmesan that contains the menu
  *  item's specifications.

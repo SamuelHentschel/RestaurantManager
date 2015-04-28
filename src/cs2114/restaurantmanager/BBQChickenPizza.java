@@ -1,10 +1,11 @@
 package cs2114.restaurantmanager;
+
 /**
  *  BBQChickenPizza class that contains the menu
  *  item's specifications.
  *
  *  @author Calogero Ramirez (frcalo5)
- *  @version 2015.04.10
+ *  @version 2015.04.`0
  */
 public class BBQChickenPizza extends FoodItem
 {
@@ -18,6 +19,5 @@ public class BBQChickenPizza extends FoodItem
         ingredients = "Grilled barbeque chicken, onions,"
             + " cheddar and mozzarella cheese.";
         cost = 12.99;
-
     }
 }

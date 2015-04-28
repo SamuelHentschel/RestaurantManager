@@ -2,11 +2,7 @@ package cs2114.restaurantmanager;
 
 import android.widget.TextView;
 import android.widget.LinearLayout;
-import sofia.graphics.Color;
-import android.graphics.RectF;
 import sofia.app.Screen;
-import android.widget.*;
-import sofia.app.ScreenLayout;
 
 /**
  *  Implements the controller for the CookerScreen.
@@ -20,9 +16,16 @@ public class CookerScreen
     private Restaurant restaurant;
     private LinearLayout todo;
     private LinearLayout inprocess;
-    ArrayListQueue<TextView> todoData;
-    ArrayListQueue<TextView> inprocessData;
+    private ArrayListQueue<TextView> todoData;
+    private ArrayListQueue<TextView> inprocessData;
 
+    /**
+     * Initializes a new CookerScreen object.
+     * Loads all the food items that were ordered into the ToDo list, and all
+     * the items currently being cooked into the In Process list.
+     *
+     * @param rest  The restaurant object being used by the application.
+     */
     public void initialize(Restaurant rest)
     {
         restaurant = rest;
@@ -61,6 +64,11 @@ public class CookerScreen
         }
     }
 
+    /**
+     * Adds the FoodItem at the head of the ToDo ArrayListQueue to the tail of
+     * the In Process ArrayListQueue.  Then updates the list.
+     * Also sets the timeStartedCooking variable in the FoodItem object.
+     */
     public void cookButtonClicked()
     {
         if(todoData.size() != 0)
@@ -75,6 +83,11 @@ public class CookerScreen
         }
     }
 
+    /**
+     * Removes the FoodItem at the head of the In Process ArrayListQueue and
+     * updates the lists.
+     * Also sets the timeFinishedCooking variable in the FoodItem object.
+     */
     public void finishButtonClicked()
     {
         if(inprocessData.size() != 0)
@@ -89,15 +102,20 @@ public class CookerScreen
         }
     }
 
+    /**
+     * Presents the MainScreen when the cookerToMenu button is pressed.
+     */
     public void cookerToMenuClicked()
     {
         presentScreen(MainScreen.class, restaurant);
         finish();
     }
 
+    /**
+     * Updates the list with the current data held in the restaurant object.
+     */
     public void changeList()
     {
-
         setContentView(R.layout.cookerscreen);
         todo = (LinearLayout)this.findViewById(R.id.todo);
         inprocess = (LinearLayout)this.findViewById(R.id.inprocess);
